@@ -62,8 +62,8 @@ def findCycleLength(d, r):
 
 startTime = time.time()
 num_sys_lim = 16 + 1
-digits_lim = 6 + 1
+digits_lim = 4 + 1
 for i in range(1, digits_lim):
     for j in range(2, num_sys_lim):
-        print(i, "digits", j, "system:", findCycleLength(i, j))
+        print(i, "digits", j, "system:", findCycleLength(i, j), "|| magic numbers: ", findMagicNumbers(i, j))
 print("--- %s sec. ---" % (time.time() - startTime))
