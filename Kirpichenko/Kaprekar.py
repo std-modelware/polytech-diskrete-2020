@@ -4,7 +4,9 @@ import time
 def dec(list_from_number, r):
     number = 0
     for k in range(len(list_from_number)):
-        number += list_from_number[len(list_from_number) - k - 1] * r ** k
+        # number += list_from_number[len(list_from_number) - k - 1] * r ** k
+        number *= r
+        number += list_from_number[k]
     return number
 
 
