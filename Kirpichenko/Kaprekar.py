@@ -18,8 +18,7 @@ def convTo(number, r):
 
 def kaprekar(number, d, r):
     number_str = str(number)
-    while len(number_str) < d:
-        number_str = '0' + number_str
+    number_str = number_str.rjust(d, '0')
     list_from_number = [int(ch, r) for ch in number_str]
     list_from_number.sort()
     min_num = dec(list_from_number, r)
