@@ -22,34 +22,35 @@ def kaprekarSingleFunc(sortedList, radix):
     sortedList.sort(reverse = True)
 
 def kaprekarMultFunc(listOfDigits, allUsedNums, radix):
-    currUsedNums = []
+    currUsedNums = dict()
     startList = listOfDigits.copy()
     numAsStr = startAsStr = listToStr(startList)
-    isCycle = False
-    while True:
-        if currUsedNums.count(numAsStr) == 0:
-            if numAsStr not in allUsedNums:
-                allUsedNums.add(numAsStr)
-                currUsedNums.append(numAsStr)
-                kaprekarSingleFunc(listOfDigits, radix)
-                if listOfDigits < startList:
-                    break
-                numAsStr = listToStr(listOfDigits)
-            else:
+    isCycle = True
+    while currUsedNums.get(numAsStr) == None:
+        if numAsStr not in allUsedNums:
+            allUsedNums.add(numAsStr)
+            kaprekarSingleFunc(listOfDigits, radix)
+            if listOfDigits < startList:
+                isCycle = False
                 break
+            prevStr = numAsStr
+            numAsStr = listToStr(listOfDigits)
+            currUsedNums[prevStr] = numAsStr
         else:
-            isCycle = True
+            isCycle = False
             break
     allUsedNums.remove(startAsStr)
     if isCycle == True:
         return True, clearCycle(currUsedNums, numAsStr)
     return False, None
 
-def clearCycle(numsList, cycleBegin):
+def clearCycle(numsDict, cycleBegin):
     cycleList = []
-    while numsList[len(numsList) - 1] != cycleBegin:
-        cycleList.append(numsList.pop())
-    cycleList.append(numsList.pop())
+    currStr = cycleBegin
+    while numsDict[currStr] != cycleBegin:
+        currStr = numsDict[currStr]
+        cycleList.append(currStr)
+    cycleList.append(cycleBegin)
     return cycleList
 
 def increasePivotList(pivotList):
@@ -76,7 +77,7 @@ def kaprekarMeasurement(digit, radix):
     return allCycles
 
 #####main#####
-allCycles = kaprekarMeasurement(9, 16)
+allCycles = kaprekarMeasurement(10, 16)
 for i in range(len(allCycles)):
    for j in range(len(allCycles[i])):
        print(allCycles[i][j], end = ' ')
