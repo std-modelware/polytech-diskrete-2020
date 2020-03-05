@@ -70,10 +70,10 @@ digits_lim = 6
     for j in range(2, num_sys_lim + 1):
         print(i, "digits", j, "system:", findCycleLength(i, j), "|| magic numbers: ", findMagicNumbers(i, j))'''
 file = open('table.csv', 'w')
-file.write('digits;system;max steps before magic number or cycle;magic numbers\n')
+file.write('"digits","system","max steps before magic number or cycle","magic numbers"\n')
 for i in range(1, digits_lim + 1):
     for j in range(2, num_sys_lim + 1):
-        file.write('%i;%i;%i;%s\n' % (i, j, findCycleLength(i, j), findMagicNumbers(i, j)))
+        file.write('"%i","%i","%i","%s"\n' % (i, j, findCycleLength(i, j), findMagicNumbers(i, j)))
 file.close()
 
 # pr.disable()
