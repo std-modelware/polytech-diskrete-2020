@@ -21,36 +21,47 @@ def kaprekarSingleFunc(sortedList, radix):
     subTwoLists(sortedList, reversedList, radix)
     sortedList.sort(reverse = True)
 
+def markNumbers(numsList, allUsedNums, startHeight):
+    height = startHeight
+    while len(numsList) > 0:
+        height = height + 1
+        allUsedNums[numsList.pop()] = height
+    return height
+
 def kaprekarMultFunc(listOfDigits, allUsedNums, radix):
-    currUsedNums = dict()
-    startList = listOfDigits.copy()
-    numAsStr = startAsStr = listToStr(startList)
+    currUsedNums = []
+    numAsStr = listToStr(listOfDigits)
     isCycle = True
-    while currUsedNums.get(numAsStr) == None:
+    cycle = None
+    height = 0
+
+    while currUsedNums.count(numAsStr) == 0:
         if numAsStr not in allUsedNums:
-            allUsedNums.add(numAsStr)
+            currUsedNums.append(numAsStr)
             kaprekarSingleFunc(listOfDigits, radix)
+            numAsStr = listToStr(listOfDigits)
+            ''' Greatly accelerates the overall calculation process, but makes it impossible to calculate height
             if listOfDigits < startList:
                 isCycle = False
                 break
-            prevStr = numAsStr
-            numAsStr = listToStr(listOfDigits)
-            currUsedNums[prevStr] = numAsStr
+            '''
         else:
             isCycle = False
             break
-    allUsedNums.remove(startAsStr)
     if isCycle == True:
-        return True, clearCycle(currUsedNums, numAsStr)
-    return False, None
+        currUsedNums.append(numAsStr)
+        cycle = eraseCycle(currUsedNums, allUsedNums)
+    return cycle, markNumbers(currUsedNums, allUsedNums, allUsedNums[numAsStr])
 
-def clearCycle(numsDict, cycleBegin):
+def eraseCycle(numsList, allUsedNums):
     cycleList = []
-    currStr = cycleBegin
-    while numsDict[currStr] != cycleBegin:
-        currStr = numsDict[currStr]
+    cycleBegin = numsList.pop()
+    while numsList[len(numsList) - 1] != cycleBegin:
+        currStr = numsList.pop()
+        allUsedNums[currStr] = 0
         cycleList.append(currStr)
-    cycleList.append(cycleBegin)
+    allUsedNums[cycleBegin] = 0
+    cycleList.append(numsList.pop())
     return cycleList
 
 def increasePivotList(pivotList):
@@ -62,23 +73,29 @@ def increasePivotList(pivotList):
         pivotList[i] += 1
 
 def kaprekarMeasurement(digit, radix):
-    allUsedNums = set()
+    allUsedNums = dict()
     allCycles = []
     pivotList = [0 for i in range(digit)]
-    currFirst = 0
+    maxHeight = 0
     while pivotList[0] < radix:
-        if (currFirst < pivotList[0]):
-            currFirst = pivotList[0]
-            print(currFirst)
-        isCycle, cycleList = kaprekarMultFunc(pivotList.copy(), allUsedNums, radix)
-        if isCycle:
+        cycleList, height = kaprekarMultFunc(pivotList.copy(), allUsedNums, radix)
+        if cycleList != None:
             allCycles.append(cycleList)
+        maxHeight = max(maxHeight, height)
         increasePivotList(pivotList)
-    return allCycles
+    return allCycles, maxHeight
 
 #####main#####
-allCycles = kaprekarMeasurement(10, 16)
-for i in range(len(allCycles)):
-   for j in range(len(allCycles[i])):
-       print(allCycles[i][j], end = ' ')
-   print()
+recordFile = open('test.txt', 'w')
+for digit in range(10, 11):
+    for radix in range(10, 11):
+        recordFile.write("Digit:" + str(digit) + ' ' + "Radix:" + str(radix) + '\n')
+        allCycles, maxHeight = kaprekarMeasurement(digit, radix)
+        for i in range(len(allCycles)):
+             for j in range(len(allCycles[i])):
+                 recordFile.write(allCycles[i][j] + ' ')
+             recordFile.write('\n')
+        recordFile.write('\n')
+        print(digit, radix)
+        print(maxHeight)
+recordFile.close()
