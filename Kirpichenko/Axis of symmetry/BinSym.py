@@ -1,15 +1,16 @@
+
 import matplotlib.pyplot as plot
 from matplotlib.patches import RegularPolygon
-import numpy as math
-
+import numpy as np
+import matplotlib.markers as marker
 
 def get_poly_points(n, r=1):
     x = []
     y = []
-    angle = math.pi - (n-2) * math.pi / n
+    angle = np.pi - (n-2) * np.pi / n
     for i in range(n):
-        x.append(r * math.cos(i * angle))
-        y.append(r * math.sin(i * angle))
+        x.append(r * np.cos(i * angle))
+        y.append(r * np.sin(i * angle))
     return x, y
 
 
@@ -37,10 +38,8 @@ def count_sym_axis(number, digits):
 
 
 
-'''x, y = get_poly_points(3)
+x, y = get_poly_points(3)
 print(x, '\n', y)
-plot.scatter(x, y)
-plot.show()'''
-
-number = 0b10110
-print(count_sym_axis(number, 5))
+#kek = marker.MarkerStyle(marker=None, fillstyle=None)
+plot.scatter(x, y, c='w', edgecolors='k')
+plot.show()
