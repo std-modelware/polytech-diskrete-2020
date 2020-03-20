@@ -1,6 +1,7 @@
 import numpy as math
 import matplotlib.pyplot as plot
-
+import os
+import shutil
 
 def count_digits(number):
     return int(math.log2(number) + 1)
@@ -93,20 +94,56 @@ def draw_poly(number, digits=0):
         x_one.append(x[i])
         y_one.append(y[i])
     plot.figure(figsize=(6,6))
-    plot.scatter(x_zer, y_zer, c='w', edgecolors='b')
-    plot.scatter(x_one, y_one, c='b')
     plot.plot(x, y, c='b')
     plot.plot([x[0], x[-1]], [y[0], y[-1]], c='b')
+    plot.scatter(x_zer, y_zer, c='w', edgecolors='b', s=100)
+    plot.scatter(x_one, y_one, c='b', s=100)
     axis = count_sym_axis(number, digits)
     for i in axis:
         x_a, y_a = get_axi_coord(digits, i)
-        plot.plot(x_a, y_a, ls=':')
+        plot.plot(x_a, y_a, ls=':', lw=2.5)
 
 
-numbers = [0b1010, 0b10110, 0b11111, 0b110011, 0b110101, 0b111111, 0b1011010]
-# numbers = [0b110011, 0b110101, 0b111111]
-for n in numbers:
-    sym_axis = count_sym_axis(n)
-    print('Axis in ', bin(n), ': ', sym_axis)
-    draw_poly(n)
-plot.show()
+def rotate_right(n, num):
+    mask = 2 ** (n - 1) if num & 1 == 1 else 0
+    num = num >> 1 | mask
+    return num
+
+
+def count_ones(n, num):
+    counter = 0
+    for i in range(n):
+        counter += 1 if num & (2 ** i) > 0 else 0
+    return counter
+
+
+def gen_nums(n, k):
+    full_list = []
+    res = []
+    for cur in range(2 ** (n - 1), 2 ** n):
+        if count_ones(n, cur) == k:
+            if cur not in full_list:
+                res.append(cur)
+                tmp = cur
+                for j in range(k):
+                    full_list.append(tmp)
+                    tmp = rotate_right(n, tmp)
+    return res
+
+
+n = 6 #number of digits
+k = 2 #number of ones
+dpi = 75 #quality of images
+if n >= 3 and k >= 1 and k <= n and dpi >= 75:
+    path = os.getcwd() + "\\plots"
+    if os.path.isdir(path):
+        shutil.rmtree(path)
+    os.mkdir("plots")
+    numbers = gen_nums(n, k)
+    for n in numbers:
+        sym_axis = count_sym_axis(n)
+        print('Axis in ', bin(n), ': ', sym_axis)
+        draw_poly(n)
+        plot.savefig(fname= path + "\\poly" + str(n) + ".png", dpi=dpi)
+else:
+    print("Enter the correct parameters!")
