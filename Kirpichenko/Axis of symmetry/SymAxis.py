@@ -131,10 +131,16 @@ def gen_nums(n, k):
     return res
 
 
-n = 6 #number of digits
-k = 2 #number of ones
-dpi = 75 #quality of images
-if n >= 3 and k >= 1 and k <= n and dpi >= 75:
+#n = 8 #number of digits
+#k = 4 #number of ones
+#dpi = 75 #quality of images
+print("Enter the number of digits: ")
+n = int(input())
+print("Enter the number of ones: ")
+k = int(input())
+print("Enter the dpi of exported figures: ")
+dpi = int(input())
+if n >= 3 and k >= 1 and k <= n and n <= 36 and dpi >= 75:
     path = os.getcwd() + "\\plots"
     if os.path.isdir(path):
         shutil.rmtree(path)
@@ -145,5 +151,6 @@ if n >= 3 and k >= 1 and k <= n and dpi >= 75:
         print('Axis in ', bin(n), ': ', sym_axis)
         draw_poly(n)
         plot.savefig(fname= path + "\\poly" + str(n) + ".png", dpi=dpi)
+        plot.close()
 else:
     print("Enter the correct parameters!")
