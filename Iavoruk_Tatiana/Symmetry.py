@@ -31,6 +31,7 @@ def axisOfSymmetry(num):
             #для 0 узлов
             if (check(num) == 1):
                 #print(num);
+                print(num[0:len(num)//2], '  |  ', num[len(num)//2:]);
                 count+=1;
             #для двух узлов    
             #удалить два элемента проверить, потом добавить
@@ -43,6 +44,7 @@ def axisOfSymmetry(num):
 #print(num)
                 if (check(num) == 1):
                     #print(num);
+                    print('  |',tmpf ,'|  ', num[0:l//2-1] ,'  |', tmpm ,'|  ', num[l//2-1:l]);
                     count+=1;
                 #print('tmpf ', tmpf,' ', num[0:l//2-1] ,' ', tmpm ,' ', num[l//2-1:l])
                 num = tmpf + num[0:l//2-1] + tmpm + num[l//2-1:l]
@@ -55,9 +57,10 @@ def axisOfSymmetry(num):
             num = num[1:];
             num = listToString(num);
             if (check(num) == 1):
+                print('  |', tmp,'|  ', num)
                 count+=1;
-                #print(num);
-            num = num+str(tmp);
+            #print(num);
+            num = num + listToString(tmp);
     #print(count);
     return count
 
