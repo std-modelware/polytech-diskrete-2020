@@ -1,0 +1,54 @@
+d:1 r:2  |      List of constants: 0                     Max height: 1      Max cycle length: 2
+d:1 r:3  |      List of constants: 0                     Max height: 1      Max cycle length: 2
+d:1 r:4  |      List of constants: 0                     Max height: 1      Max cycle length: 2
+d:1 r:5  |      List of constants: 0                     Max height: 1      Max cycle length: 2
+d:1 r:6  |      List of constants: 0                     Max height: 1      Max cycle length: 2
+d:1 r:7  |      List of constants: 0                     Max height: 1      Max cycle length: 2
+d:1 r:8  |      List of constants: 0                     Max height: 1      Max cycle length: 2
+d:1 r:9  |      List of constants: 0                     Max height: 1      Max cycle length: 2
+d:1 r:10 |      List of constants: 0                     Max height: 1      Max cycle length: 2
+d:2 r:2  |      List of constants: 0 1                   Max height: 1      Max cycle length: 2
+d:2 r:3  |      List of constants: 0                     Max height: 1      Max cycle length: 2
+d:2 r:4  |      List of constants: 0                     Max height: 2      Max cycle length: 3
+d:2 r:5  |      List of constants: 0 8                   Max height: 1      Max cycle length: 4
+d:2 r:6  |      List of constants: 0                     Max height: 3      Max cycle length: 4
+d:2 r:7  |      List of constants: 0                     Max height: 1      Max cycle length: 2
+d:2 r:8  |      List of constants: 0 21                  Max height: 3      Max cycle length: 4
+d:2 r:9  |      List of constants: 0                     Max height: 2      Max cycle length: 5
+d:2 r:10 |      List of constants: 0                     Max height: 5      Max cycle length: 6
+d:3 r:2  |      List of constants: 0 3                   Max height: 1      Max cycle length: 2
+d:3 r:3  |      List of constants: 0                     Max height: 2      Max cycle length: 3
+d:3 r:4  |      List of constants: 0 30                  Max height: 1      Max cycle length: 4
+d:3 r:5  |      List of constants: 0                     Max height: 2      Max cycle length: 5
+d:3 r:6  |      List of constants: 0 105                 Max height: 1      Max cycle length: 5
+d:3 r:7  |      List of constants: 0                     Max height: 2      Max cycle length: 6
+d:3 r:8  |      List of constants: 0 252                 Max height: 1      Max cycle length: 6
+d:3 r:9  |      List of constants: 0                     Max height: 2      Max cycle length: 7
+d:3 r:10 |      List of constants: 0 495                 Max height: 1      Max cycle length: 7
+d:4 r:2  |      List of constants: 0 7 9                 Max height: 1      Max cycle length: 2
+d:4 r:3  |      List of constants: 0                     Max height: 2      Max cycle length: 4
+d:4 r:4  |      List of constants: 0 201                 Max height: 2      Max cycle length: 5
+d:4 r:5  |      List of constants: 0 392                 Max height: 1      Max cycle length: 4
+d:4 r:6  |      List of constants: 0                     Max height: 6      Max cycle length: 9
+d:4 r:7  |      List of constants: 0                     Max height: 3      Max cycle length: 6
+d:4 r:8  |      List of constants: 0                     Max height: 5      Max cycle length: 8
+d:4 r:9  |      List of constants: 0                     Max height: 3      Max cycle length: 6
+d:4 r:10 |      List of constants: 0 6174                Max height: 1      Max cycle length: 6
+d:5 r:2  |      List of constants: 0 15 21               Max height: 1      Max cycle length: 2
+d:5 r:3  |      List of constants: 0 184                 Max height: 1      Max cycle length: 5
+d:5 r:4  |      List of constants: 0                     Max height: 2      Max cycle length: 4
+d:5 r:5  |      List of constants: 0                     Max height: 4      Max cycle length: 7
+d:5 r:6  |      List of constants: 0 5600                Max height: 2      Max cycle length: 7
+d:5 r:7  |      List of constants: 0                     Max height: 5      Max cycle length: 11
+d:5 r:8  |      List of constants: 0                     Max height: 4      Max cycle length: 9
+d:5 r:9  |      List of constants: 0 41520               Max height: 5      Max cycle length: 10
+d:5 r:10 |      List of constants: 0                     Max height: 4      Max cycle length: 10
+d:6 r:2  |      List of constants: 0 31 45 49            Max height: 1      Max cycle length: 2
+d:6 r:3  |      List of constants: 0                     Max height: 3      Max cycle length: 5
+d:6 r:4  |      List of constants: 0 3369 2550 3873      Max height: 1      Max cycle length: 7
+d:6 r:5  |      List of constants: 0                     Max height: 5      Max cycle length: 8
+d:6 r:6  |      List of constants: 0 33860 42925 27195   Max height: 3      Max cycle length: 7
+d:6 r:7  |      List of constants: 0                     Max height: 6      Max cycle length: 12
+d:6 r:8  |      List of constants: 0 213402 147420       Max height: 3      Max cycle length: 10
+d:6 r:9  |      List of constants: 0                     Max height: 14     Max cycle length: 17
+d:6 r:10 |      List of constants: 0 631764 549945       Max height: 7      Max cycle length: 18
