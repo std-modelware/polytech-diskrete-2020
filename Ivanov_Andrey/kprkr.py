@@ -29,7 +29,7 @@ def kaprekar(number_list, base):
     else:
         return 0
 
-# Разность с учётом системы счисления (ВАЖНО - num1 по умолчанию меньше num2)
+# Разность с учётом системы счисления
 def base_residual(num1, num2, base):
     i = len(num1) - 1
     if i == 0:
