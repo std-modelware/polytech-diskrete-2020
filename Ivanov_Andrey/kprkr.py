@@ -29,7 +29,7 @@ def kaprekar(number_list, base):
     else:
         return 0
 
-# Разность с учётом системы счисления
+# Разность с учётом системы счисления (ВАЖНО - num1 по умолчанию меньше num2)
 def base_residual(num1, num2, base):
     i = len(num1) - 1
     if i == 0:
@@ -62,17 +62,30 @@ def dec2base(dec, base):
 # Погнали
 def run():
     base_list = list(range(2, 11))
+    output_list = []
     for base in base_list:
-        print('Система счисления: ', base)
+        print('Система счисления:', base)
         number = 0
-        tmp_number = 0
+        prev_len = 1  # Чтобы не выводить ноль
+        flag = 0
         while True:
             tmp_number = dec2base(number, base)
             number_list = num2arr(tmp_number)
-            if len(number_list) > 6:
+            tmp_len = len(number_list)
+            if tmp_len != prev_len and output_list != []:
+                print('   Количество цифр:', prev_len)
+                print('    ', output_list)
+                output_list = []
+            if tmp_len > 6:
+                if flag == 0:
+                    print('     Числа Капрекара отсутствуют')
                 break
             if kaprekar(number_list, base) == 1:
-                print(tmp_number)
+                if prev_len == tmp_len:
+                    output_list.append(tmp_number)
+                    flag = 1
             number += 1
+            prev_len = tmp_len
+
 
 run()
