@@ -1,3 +1,9 @@
+import numpy
+import matplotlib.pyplot as plot
+import itertools
+import time
+
+
 def ToString(num):
     STR = ""
     for i in num:
