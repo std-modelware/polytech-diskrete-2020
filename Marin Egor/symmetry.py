@@ -31,7 +31,7 @@ def all_combinations(n: int, k: int):
     return
 
 
-def check(num: str, n: int, cut: str):
+def check(num: list, n: int, cut: str):
     '''
     Проверяет, есть ли данная ось симметрии в многоугольнике
     '''
@@ -94,7 +94,23 @@ def symmetry_polygons(n: int, k: int):
     return polygons
 
 
+def draw_axis(polygons: list):
+    for i in polygons:
+        if len(i[1]) == 0:
+            i[0].insert(len(i) // 2 + 1, '|')
+        else:
+            i[0].insert(1, '|')
+            i[0].insert(0, '|')
+            if len(i[1]) == 2:
+                i[0].insert(len(i[0]) // 2 + 1, '|')
+                i[0].insert(len(i[0]) // 2 + 3, '|')
+
+
 input_data = input().split()
 p = symmetry_polygons(int(input_data[0]), int(input_data[1]))
+draw_axis(p)
 for i in p:
-    print(i)
+    res = ''
+    for sym in i[0]:
+        res += sym
+    print(res)
