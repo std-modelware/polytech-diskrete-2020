@@ -94,30 +94,30 @@ def Print(n, num, Trough_numbers, Between_numbers, Mixed_numbers):
 
     plot.show()
 
-    
+
 def Write(F, ele, Through_numbers, Between_numbers, Mixed_numbers):
-F.write(str(ele) + "\n")
-F.write("Through_numbers:\n")
-for i in Through_numbers:
-    F.write(str(i) + "\n")
-F.write("Between_number:\n")
-for i in Between_numbers:
-    F.write(str(i) + "\n")
-F.write("Mixed_numbers:\n")
-for i in Mixed_numbers:
-    F.write(str(i) + "\n")
-F.write("\n\n")
+    F.write(str(ele) + "\n")
+    F.write("Through_numbers:\n")
+    for i in Through_numbers:
+        F.write(str(i) + "\n")
+    F.write("Between_number:\n")
+    for i in Between_numbers:
+        F.write(str(i) + "\n")
+    F.write("Mixed_numbers:\n")
+    for i in Mixed_numbers:
+        F.write(str(i) + "\n")
+    F.write("\n\n")
 
 
 def WriteDescription(F):
-F.write("Through_number обозначает оси симметрии, проходящие через цифры = вершины многоугольника.\n"
-        "В квадратных скобках числа в квадратных скобках обозначают номер цифр, через которые проходит ось\n"
-        "Between_numbers обозначает сои симметрии, проходящие между цифрами.\n"
-        "Допустим в квадратных скобках [n, m], значит, что ось симметрии проходит между"
-        "n и (n+1) цифрами и между m и (m+1) цифрами\n"
-        "Mixed_numbers обозначает оси симметрии, проходящие через цифру и между одновременно(в случае нечетного n)\n"
-        "Допусти в квадратных скобках [n, m], значит, что ось симметрии проходит"
-        "через n-ую цифру и между m и (m+1) цифрами\n\n\n")
+    F.write("Through_number обозначает оси симметрии, проходящие через цифры = вершины многоугольника.\n"
+            "В квадратных скобках числа в квадратных скобках обозначают номер цифр, через которые проходит ось\n"
+            "Between_numbers обозначает сои симметрии, проходящие между цифрами.\n"
+            "Допустим в квадратных скобках [n, m], значит, что ось симметрии проходит между"
+            "n и (n+1) цифрами и между m и (m+1) цифрами\n"
+            "Mixed_numbers обозначает оси симметрии, проходящие через цифру и между одновременно(в случае нечетного n)\n"
+            "Допусти в квадратных скобках [n, m], значит, что ось симметрии проходит"
+            "через n-ую цифру и между m и (m+1) цифрами\n\n\n")
 
 
 #Рассмотрим случай, когда ось симметрии проходит через два числа
@@ -177,7 +177,7 @@ def AxisMixedNumbers(n, num):
             result.append([k, k + n // 2])
     return result
 
-def SymmetryAxis(result, n):
+def SymmetryAxis(result, n, F):
     count = 0
     for ele in result:
         Through_numbers = []
@@ -198,7 +198,9 @@ def SymmetryAxis(result, n):
             count += Mixed_numbers.__len__()
 
         Print(n, num, Through_numbers, Between_numbers, Mixed_numbers)
+        Write(F, ele, Through_numbers, Between_numbers, Mixed_numbers)
     print(count)
+    F.write("Total axis of symmetry =" + str(count))
 
 ###  MAIN  ###
 F = open('result.txt', 'w')
@@ -210,3 +212,11 @@ result = BuiltNumbers(n, k)
 WriteDescription(F)
 SymmetryAxis(result, n, F)
 F.close()
+
+
+
+
+
+
+
+
