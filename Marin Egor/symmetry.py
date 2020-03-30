@@ -97,13 +97,13 @@ def symmetry_polygons(n: int, k: int):
 def draw_axis(polygons: list):
     for i in polygons:
         if len(i[1]) == 0:
-            i[0].insert(len(i) // 2 + 1, '|')
+            i[0].insert(len(i[0]) // 2, '|')
         else:
-            i[0].insert(1, '|')
-            i[0].insert(0, '|')
+            i[0].insert(1, ']')
+            i[0].insert(0, '[')
             if len(i[1]) == 2:
-                i[0].insert(len(i[0]) // 2 + 1, '|')
-                i[0].insert(len(i[0]) // 2 + 3, '|')
+                i[0].insert(len(i[0]) // 2 + 1, '[')
+                i[0].insert(len(i[0]) // 2 + 3, ']')
 
 
 input_data = input().split()
