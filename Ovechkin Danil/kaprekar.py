@@ -1,3 +1,4 @@
+#Преобразование числа в список из цифр
 def NumberToNumerals(number, d, r):
     result = []
     n = number
@@ -5,12 +6,14 @@ def NumberToNumerals(number, d, r):
         n, tmp = divmod(n, r)
         result.append(tmp)
     return result
+#Преобразование списка из цифр в число
 def NumeralsToNumber(numerals, r):
     num = 0
     numerals.reverse()
     for i in range(len(numerals)):
         num += numerals[i] * r ** i
     return num
+#Функция Капрекара для одного шага
 def kaprekar(number, r, d):
     Numerals = NumberToNumerals(number, d, r)
     Numerals.sort()
@@ -18,6 +21,7 @@ def kaprekar(number, r, d):
     Numerals.sort(reverse=True)
     max = NumeralsToNumber(Numerals, r)
     return max - min
+#Поиск неподвижной точки и максимальной длины цикла
 def FindConstantsAndCycles(r, d):
     NewNum = 0
     ListConstants = list()
@@ -41,6 +45,7 @@ def FindConstantsAndCycles(r, d):
         MaxLength = max(MaxLength, length)
         length = 0
     return ListConstants, MaxLength
+#Преобразование из одной системы счисления в другую
 def ChangeNumeralSystem(num, to_base=10, from_base=10):
     if isinstance(num, str):
         n = int(num, from_base)
@@ -51,6 +56,7 @@ def ChangeNumeralSystem(num, to_base=10, from_base=10):
         return alphabet[n]
     else:
         return ChangeNumeralSystem(n // to_base, to_base) + alphabet[n % to_base]
+#Выполнение исследования
 def Research(file):
     for r in range(2, 11):
         for d in range(2, 7):
