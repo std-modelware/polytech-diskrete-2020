@@ -1,0 +1,90 @@
+Radix: 2	d: 2	List of nums: ['0', '1']
+			Max length: 1
+Radix: 2	d: 3	List of nums: ['0', '11']
+			Max length: 1
+Radix: 2	d: 4	List of nums: ['0', '111', '1001']
+			Max length: 1
+Radix: 2	d: 5	List of nums: ['0', '1111', '10101']
+			Max length: 1
+Radix: 2	d: 6	List of nums: ['0', '11111', '101101', '110001']
+			Max length: 1
+Radix: 3	d: 2	List of nums: ['0']
+			Max length: 3
+Radix: 3	d: 3	List of nums: ['0']
+			Max length: 2
+Radix: 3	d: 4	List of nums: ['0']
+			Max length: 3
+Radix: 3	d: 5	List of nums: ['0', '20211']
+			Max length: 4
+Radix: 3	d: 6	List of nums: ['0']
+			Max length: 4
+Radix: 4	d: 2	List of nums: ['0']
+			Max length: 2
+Radix: 4	d: 3	List of nums: ['0', '132']
+			Max length: 3
+Radix: 4	d: 4	List of nums: ['0', '3021']
+			Max length: 4
+Radix: 4	d: 5	List of nums: ['0']
+			Max length: 3
+Radix: 4	d: 6	List of nums: ['0', '310221', '213312', '330201']
+			Max length: 6
+Radix: 5	d: 2	List of nums: ['0', '13']
+			Max length: 3
+Radix: 5	d: 3	List of nums: ['0']
+			Max length: 4
+Radix: 5	d: 4	List of nums: ['0', '3032']
+			Max length: 3
+Radix: 5	d: 5	List of nums: ['0']
+			Max length: 6
+Radix: 5	d: 6	List of nums: ['0']
+			Max length: 7
+Radix: 6	d: 2	List of nums: ['0']
+			Max length: 3
+Radix: 6	d: 3	List of nums: ['0', '253']
+			Max length: 4
+Radix: 6	d: 4	List of nums: ['0']
+			Max length: 8
+Radix: 6	d: 5	List of nums: ['0', '41532']
+			Max length: 6
+Radix: 6	d: 6	List of nums: ['0', '420432', '530421', '325523']
+			Max length: 6
+Radix: 7	d: 2	List of nums: ['0']
+			Max length: 4
+Radix: 7	d: 3	List of nums: ['0']
+			Max length: 5
+Radix: 7	d: 4	List of nums: ['0']
+			Max length: 5
+Radix: 7	d: 5	List of nums: ['0']
+			Max length: 10
+Radix: 7	d: 6	List of nums: ['0']
+			Max length: 11
+Radix: 8	d: 2	List of nums: ['0', '25']
+			Max length: 3
+Radix: 8	d: 3	List of nums: ['0', '374']
+			Max length: 5
+Radix: 8	d: 4	List of nums: ['0']
+			Max length: 7
+Radix: 8	d: 5	List of nums: ['0']
+			Max length: 8
+Radix: 8	d: 6	List of nums: ['0', '640632', '437734']
+			Max length: 9
+Radix: 9	d: 2	List of nums: ['0']
+			Max length: 4
+Radix: 9	d: 3	List of nums: ['0']
+			Max length: 6
+Radix: 9	d: 4	List of nums: ['0']
+			Max length: 5
+Radix: 9	d: 5	List of nums: ['0', '62853']
+			Max length: 9
+Radix: 9	d: 6	List of nums: ['0']
+			Max length: 16
+Radix: 10	d: 2	List of nums: ['0']
+			Max length: 5
+Radix: 10	d: 3	List of nums: ['0', '495']
+			Max length: 6
+Radix: 10	d: 4	List of nums: ['0', '6174']
+			Max length: 5
+Radix: 10	d: 5	List of nums: ['0']
+			Max length: 9
+Radix: 10	d: 6	List of nums: ['0', '631764', '549945']
+			Max length: 17
