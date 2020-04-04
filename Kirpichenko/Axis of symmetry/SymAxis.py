@@ -125,15 +125,15 @@ def gen_nums(n, k):
             if cur not in full_list:
                 res.append(cur)
                 tmp = cur
-                for j in range(k):
+                for j in range(n):
                     full_list.append(tmp)
                     tmp = rotate_right(n, tmp)
     return res
 
 
-#n = 8 #number of digits
-#k = 4 #number of ones
-#dpi = 75 #quality of images
+'''n = 6 #number of digits
+k = 2 #number of ones
+dpi = 75 #quality of images'''
 print("Enter the number of digits: ")
 n = int(input())
 print("Enter the number of ones: ")
