@@ -47,14 +47,15 @@ def research_step(base, n, number10):
 def research(iBase, iN):
     fixed_points = []
     maximal_length_of_cycle = -1
-    left_border = get_minimal_argument_in_current_base(iBase, iN)
+    #left_border = get_minimal_argument_in_current_base(iBase, iN)
     right_border = get_maximal_argument_in_current_base(iBase, iN)
+    left_border = 1
     for number in range(left_border, right_border + 1):
         cycle_length = research_step(iBase, iN, number)
         if cycle_length > maximal_length_of_cycle:
             maximal_length_of_cycle = cycle_length
         if number not in fixed_points and number == kaprekar(number, iN, iBase):
-            fixed_points.append(convert_from_decimal(number, iBase))
+            fixed_points.append(convert_from_decimal(number, iBase).rjust(iN, '0'))
     return {"Max len of loop": maximal_length_of_cycle - 1, "List of fixed points": fixed_points}
 
 
