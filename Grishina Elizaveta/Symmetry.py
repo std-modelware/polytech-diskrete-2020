@@ -42,10 +42,10 @@ def Combinations(n: int, k: int):
     l = list()
     l = '1'*k + '0'*(n-k)
     for i in itertools.permutations(l, n):
-        n = ''.join(i)
-        if n not in tmp:
-            tmp.append(n)
-    print(tmp)
+        num = ''.join(i)
+        if num not in tmp:
+            tmp.append(num)
+    #print(tmp)
     res = Cycle(tmp, int(n))
     return res
 
@@ -69,10 +69,10 @@ def Axis(num: list):
     l = len(num)
     if (l % 2) == 0:
         if Check(num) == True:
-            print(num[0:len(num)//2], '  |  ', num[len(num)//2:]);
+            print(ToStr(num[0:len(num)//2]), '  |  ', ToStr(num[len(num)//2:]));
             return True
         elif Check2(num) == True:
-            print('| ', num[0], ' | ', num[1:l//2], '| ', num[l//2], ' | ', num[l//2+1:l])
+            print('(', num[0], ')', ToStr(num[1:l//2]), '(', num[l//2], ')', ToStr(num[l//2+1:l]))
             return True
     else:
 #Существует ли ось, выходящая из угла и приходящая на противолежащую сторону
@@ -81,7 +81,7 @@ def Axis(num: list):
         #tmp2 = num.pop(l//2)
         if Check(num) == True:
             num.insert(0, int(tmp1))
-            print('| ', num[0], ' | ', num[1:l])
+            print('(', num[0], ')', ToStr(num[1:l]))
             return True
     return False
 
@@ -110,4 +110,6 @@ print('Put length of number:')
 n = int(input())
 print('Put number of ones:')
 k = int(input())
+#Скобками () выделены вершины многоугольника, являющиеся концами оси симметрии, символом | обозначена ось, выходящая из стороны
+#многоугольника и приходящая в противоположную
 Symmetry(n, k)
