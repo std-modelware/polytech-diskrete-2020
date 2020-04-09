@@ -1,14 +1,15 @@
 import matplotlib.pyplot as plt
 import math
 
-def buildNumbers(allSpaceLists):
+def buildNumbers(allSpaceLists, digit):
     allNums = [];
     for spaceList in allSpaceLists:
         currNum = [];
         for space in spaceList:
             for i in range(space):
                 currNum.append(0);
-            currNum.append(1);
+            if i < digit - 1:
+                currNum.append(1);
         allNums.append(currNum);
     return allNums;
 
@@ -84,7 +85,6 @@ def IterateCurrMax(spaceList, reqSum, depth, allSpaceLists, checkIndex):
             nextSpaceList = spaceList.copy();
             nextSpaceList.append(num);
             IterateCurrMax(nextSpaceList, reqSum - num, depth - 1, allSpaceLists, nextCheckIndex);
-
     elif reqSum <= spaceList[checkIndex]:
         spaceList.append(reqSum);
 
@@ -103,7 +103,10 @@ def IterateAllSpaces(digit, onesNumber):
         currList = [];
         checkIndex = 0;
         currList.append(num);
-        IterateCurrMax(currList, reqSum - num, onesNumber - 2, allSpaceLists, checkIndex);
+        if onesNumber >= 2:
+            IterateCurrMax(currList, reqSum - num, onesNumber - 2, allSpaceLists, checkIndex);
+        elif num == reqSum:
+            allSpaceLists.append(currList);
     return allSpaceLists;
 
 print("Enter number of digits: ");
@@ -111,6 +114,6 @@ digit = int(input());
 print("Enter number of ones: ");
 onesN = int(input())
 allSpaceLists = IterateAllSpaces(digit, onesN);
-allNums = buildNumbers(allSpaceLists);
+allNums = buildNumbers(allSpaceLists, digit);
 axesList = defineAxes(allNums);
 drawAxes(allNums, axesList);
