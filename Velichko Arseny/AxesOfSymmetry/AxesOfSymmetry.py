@@ -6,6 +6,7 @@ def buildNumbers(allSpaceLists, digit):
     for spaceList in allSpaceLists:
         currNum = [];
         for space in spaceList:
+            i = 0;
             for i in range(space):
                 currNum.append(0);
             if i < digit - 1:
