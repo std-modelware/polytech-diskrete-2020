@@ -1,0 +1,17 @@
+['1', '1', '0', '0', '0', '0'] : bit array
+Between numbers, case 2: 
+['1' '0' '0'] | ['0' '0' '1']
+Total sym count: 1
+
+['1', '0', '1', '0', '0', '0'] : bit array
+Through two numbers, case 1: 
+['1' '0'] | ['0' '1']
+Total sym count: 1
+
+['1', '0', '0', '1', '0', '0'] : bit array
+Through two numbers, case 1: 
+['0' '0'] | ['0' '0']
+Between numbers, case 2: 
+['0' '1' '0'] | ['0' '1' '0']
+Total sym count: 2
+
