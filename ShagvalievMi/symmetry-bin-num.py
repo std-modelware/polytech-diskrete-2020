@@ -12,15 +12,24 @@ def straight_line_centre_and_point(x, x1, y1):
 def draw_polygon_binary_num(radius, num_list):
     x = []
     y = []
+    i_zeroes = [i for i in range(0, len(num_list)) if num_list[i] == 0]
+    x_zeroes = []
+    y_zeroes = []
     val_to_move_num = 1
     angles = np.linspace(0, 2*math.pi, len(num_list)+1)
-    for cur_angle in angles:
+
+    for i, cur_angle in enumerate(angles):
         y.append(radius*math.cos(cur_angle))
         x.append(radius*math.sin(cur_angle))
+        if i in i_zeroes:
+            x_zeroes.append(x[-1])
+            y_zeroes.append(y[-1])
+
     for i in range(len(num_list)):
         plt.text(x[i]+val_to_move_num*my_sign(x[i]), y[i]+val_to_move_num*my_sign(y[i]), str(num_list[i]))
     plt.plot(x, y, '-', color='#4CB2DC', linewidth=3)
     plt.plot(x, y, '.', color='black', markersize=10)
+    plt.plot(x_zeroes, y_zeroes, '.', color='white', markersize=8)
     plt.ylim([-radius - val_to_move_num, radius + val_to_move_num])
     plt.xlim([-radius - val_to_move_num, radius + val_to_move_num])
     plt.gca().set_aspect('equal', adjustable='box')
