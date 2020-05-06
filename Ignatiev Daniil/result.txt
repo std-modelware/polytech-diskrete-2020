@@ -1,0 +1,162 @@
+-------------------
+
+ digits: 1, digit_system: 2, max_steps: 1, magic_numbers: ['0'] 
+-------------------
+
+ digits: 1, digit_system: 3, max_steps: 1, magic_numbers: ['0'] 
+-------------------
+
+ digits: 1, digit_system: 4, max_steps: 1, magic_numbers: ['0'] 
+-------------------
+
+ digits: 1, digit_system: 5, max_steps: 1, magic_numbers: ['0'] 
+-------------------
+
+ digits: 1, digit_system: 6, max_steps: 1, magic_numbers: ['0'] 
+-------------------
+
+ digits: 1, digit_system: 7, max_steps: 1, magic_numbers: ['0'] 
+-------------------
+
+ digits: 1, digit_system: 8, max_steps: 1, magic_numbers: ['0'] 
+-------------------
+
+ digits: 1, digit_system: 9, max_steps: 1, magic_numbers: ['0'] 
+-------------------
+
+ digits: 1, digit_system: 10, max_steps: 1, magic_numbers: ['0'] 
+-------------------
+
+ digits: 2, digit_system: 2, max_steps: 1, magic_numbers: ['0', '1'] 
+-------------------
+
+ digits: 2, digit_system: 3, max_steps: 3, magic_numbers: ['0'] 
+-------------------
+
+ digits: 2, digit_system: 4, max_steps: 3, magic_numbers: ['0'] 
+-------------------
+
+ digits: 2, digit_system: 5, max_steps: 3, magic_numbers: ['0', '13'] 
+-------------------
+
+ digits: 2, digit_system: 6, max_steps: 4, magic_numbers: ['0'] 
+-------------------
+
+ digits: 2, digit_system: 7, max_steps: 4, magic_numbers: ['0'] 
+-------------------
+
+ digits: 2, digit_system: 8, max_steps: 4, magic_numbers: ['0', '25'] 
+-------------------
+
+ digits: 2, digit_system: 9, max_steps: 4, magic_numbers: ['0'] 
+-------------------
+
+ digits: 2, digit_system: 10, max_steps: 6, magic_numbers: ['0'] 
+-------------------
+
+ digits: 3, digit_system: 2, max_steps: 1, magic_numbers: ['0', '11'] 
+-------------------
+
+ digits: 3, digit_system: 3, max_steps: 2, magic_numbers: ['0'] 
+-------------------
+
+ digits: 3, digit_system: 4, max_steps: 3, magic_numbers: ['0', '132'] 
+-------------------
+
+ digits: 3, digit_system: 5, max_steps: 4, magic_numbers: ['0'] 
+-------------------
+
+ digits: 3, digit_system: 6, max_steps: 4, magic_numbers: ['0', '253'] 
+-------------------
+
+ digits: 3, digit_system: 7, max_steps: 5, magic_numbers: ['0'] 
+-------------------
+
+ digits: 3, digit_system: 8, max_steps: 5, magic_numbers: ['0', '374'] 
+-------------------
+
+ digits: 3, digit_system: 9, max_steps: 6, magic_numbers: ['0'] 
+-------------------
+
+ digits: 3, digit_system: 10, max_steps: 6, magic_numbers: ['0', '495'] 
+-------------------
+
+ digits: 4, digit_system: 2, max_steps: 1, magic_numbers: ['0', '111', '1001'] 
+-------------------
+
+ digits: 4, digit_system: 3, max_steps: 3, magic_numbers: ['0'] 
+-------------------
+
+ digits: 4, digit_system: 4, max_steps: 4, magic_numbers: ['0', '3021'] 
+-------------------
+
+ digits: 4, digit_system: 5, max_steps: 4, magic_numbers: ['0', '3032'] 
+-------------------
+
+ digits: 4, digit_system: 6, max_steps: 9, magic_numbers: ['0'] 
+-------------------
+
+ digits: 4, digit_system: 7, max_steps: 6, magic_numbers: ['0'] 
+-------------------
+
+ digits: 4, digit_system: 8, max_steps: 9, magic_numbers: ['0'] 
+-------------------
+
+ digits: 4, digit_system: 9, max_steps: 6, magic_numbers: ['0'] 
+-------------------
+
+ digits: 4, digit_system: 10, max_steps: 7, magic_numbers: ['0', '6174'] 
+-------------------
+
+ digits: 5, digit_system: 2, max_steps: 1, magic_numbers: ['0', '1111', '10101'] 
+-------------------
+
+ digits: 5, digit_system: 3, max_steps: 4, magic_numbers: ['0', '20211'] 
+-------------------
+
+ digits: 5, digit_system: 4, max_steps: 5, magic_numbers: ['0'] 
+-------------------
+
+ digits: 5, digit_system: 5, max_steps: 6, magic_numbers: ['0'] 
+-------------------
+
+ digits: 5, digit_system: 6, max_steps: 6, magic_numbers: ['0', '41532'] 
+-------------------
+
+ digits: 5, digit_system: 7, max_steps: 10, magic_numbers: ['0'] 
+-------------------
+
+ digits: 5, digit_system: 8, max_steps: 11, magic_numbers: ['0'] 
+-------------------
+
+ digits: 5, digit_system: 9, max_steps: 11, magic_numbers: ['0', '62853'] 
+-------------------
+
+ digits: 5, digit_system: 10, max_steps: 9, magic_numbers: ['0'] 
+-------------------
+
+ digits: 6, digit_system: 2, max_steps: 1, magic_numbers: ['0', '11111', '101101', '110001'] 
+-------------------
+
+ digits: 6, digit_system: 3, max_steps: 5, magic_numbers: ['0'] 
+-------------------
+
+ digits: 6, digit_system: 4, max_steps: 6, magic_numbers: ['0', '213312', '310221', '330201'] 
+-------------------
+
+ digits: 6, digit_system: 5, max_steps: 9, magic_numbers: ['0'] 
+-------------------
+
+ digits: 6, digit_system: 6, max_steps: 9, magic_numbers: ['0', '325523', '420432', '530421'] 
+-------------------
+
+ digits: 6, digit_system: 7, max_steps: 12, magic_numbers: ['0'] 
+-------------------
+
+ digits: 6, digit_system: 8, max_steps: 16, magic_numbers: ['0', '437734', '640632'] 
+-------------------
+
+ digits: 6, digit_system: 9, max_steps: 21, magic_numbers: ['0'] 
+-------------------
+
+ digits: 6, digit_system: 10, max_steps: 19, magic_numbers: ['0', '549945', '631764'] 
