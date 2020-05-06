@@ -63,8 +63,6 @@ file = open('result.txt', 'w')
 for i in range(1, LimitDigits + 1):    
     for j in range(2, LimitSystems + 1):
         file.write('-------------------\n\n digits: %i, digit_system: %i, max_steps: %i, magic_numbers: %s \n'  % (i, j, CycleLength(i, j), MagicNumbers(i, j)))
-        #file.write('       %i     		          %i               %i               %s  \n' % (i, j, CycleLength(i, j), MagicNumbers(i, j)))
-        #print('"%i","%i","%i","%s"\n' % (i, j, CycleLength(i, j), MagicNumbers(i, j)))
-file.close()
+       file.close()
 
 print('end')
