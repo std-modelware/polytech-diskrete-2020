@@ -1,0 +1,35 @@
+Another graph
+
+0 5 inf 10
+inf 0 3 inf
+inf inf 0 1
+inf inf inf 0
+
+Another graph
+
+0 3 inf 5
+2 0 inf 4
+inf 1 0 inf
+inf inf 2 0
+
+Another graph
+
+0 1 1 inf
+1 2 -1 inf
+2 3 -1 inf
+3 0 -1 inf
+
+Another graph
+
+0 8 inf 1
+inf 0 1 inf
+4 inf 0 inf
+inf 2 9 0
+
+Another graph
+
+0 3 8 inf -4
+inf 0 inf 1 7
+inf 4 0 inf inf
+2 inf -5 0 inf
+inf inf inf 6 0
