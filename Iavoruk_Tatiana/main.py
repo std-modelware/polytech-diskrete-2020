@@ -1,6 +1,12 @@
 
 from itertools import groupby
 
+def check(ms):
+    for s in C:
+        if s.find(ms) != -1:
+            return 0
+    return 1
+
 def KCC():
     if (len(T) == 0):
         return
@@ -21,7 +27,8 @@ def KCC():
                 while True:
                     # print(T)
                     if (len(T)==0):
-                        C.append(M[v])#для добавления последнего цикла
+                        if check(M[v])==1:
+                            C.append(M[v])#для добавления последнего цикла
                         return
                     w = T.pop()
                     V.remove(w)
@@ -43,28 +50,29 @@ def KCC():
             KCC()
 
 
-n = int(input("Количество вершин графа "))
-#n = 4
 Г = {}
+f = open('C://txt//5.txt','r')
+n = int(f.readline())
 for i in range(n):
-   print("список смежности", i + 1, "вершины, если их нет напишите 0. Вершишы пишите через пробел.")
-   Г[i + 1] = input()
-# check()
-# Г[1] = '0'
-# Г[2] = '3'
-# Г[3] = '2'
-# Г[4] = '0'
+    Г[i+1] = f.readline()
+    Г[i+1] = Г[i+1].rstrip('\n')
+
 C = list()
 M = {}
 e = {}
 for i in range(n):
-    M[i + 1] = str(i + 1);
-    e[i + 1] = int(0);
+    M[i + 1] = str(i + 1)
+    e[i + 1] = int(0)
 V = [i + 1 for i in range(n)]
 while (len(V) != 0):
     T = list()
     T.append(V[0])
     e[V[0]] = 1
     KCC()
-print(C)
-
+#print(C)
+f1 = open('C://txt//5out.txt', 'w')
+for sc in C:
+    sc+='\n'
+    f1.write(sc)
+f.close()
+f1.close()
