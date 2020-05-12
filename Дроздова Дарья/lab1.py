@@ -3,7 +3,7 @@ def Conv (number, base):
     if number==0:
         newNum.append(0)
     else:
-        while number>=0:
+        while number>0:
             newNum.append(number%base)
             number //=base
     newNum.reverse()
@@ -21,7 +21,6 @@ def Number(numberList, base):
 magicNumber = []
 usedNumber = []
 
-# Добавление нужного количества нулей в массив
 def AddZeroes (list, n, discharge):
     tmp = discharge - n
     i = 0
@@ -42,15 +41,15 @@ def kaprekar(number, discharge, base):
     n = len(list_of_digits)
     if n < discharge:
         AddZeroes(list_of_digits, n, discharge)
-    #list_of_digits.sort()
+        list_of_digits.sort()
     min = sorted(list_of_digits)
     max = sorted(list_of_digits1, reverse=True)
     delta = Subtraction(min, max, base)
     n = len(delta)
     if n < discharge:
         AddZeroes(delta, n, discharge)
-    delta.sort()
-    if delta == min:
+        delta.sort()
+    if delta == list_of_digits:
         delt = Number(delta, base)
         if delt not in magicNumber:
             magicNumber.append(delt)
@@ -62,6 +61,9 @@ def Max (a, b):
     else:
         return b
 
+file=open('table.csv', 'w')
+file.write('"system","digits","max steps","magic numbers"\n')
+
 for base in range (2,11):
     for discharge in range (2,7):
         max = 0
@@ -71,23 +73,29 @@ for base in range (2,11):
             while True:
                 # print(number, "-> " , end=" ")
                 numberList = kaprekar(numberList, discharge, base)
-                maxLenght = maxLenght + 1
+                if(numberList not in magicNumber):
+                    maxLenght = maxLenght + 1
                 numberChange=Number(numberList, base)
                 if (numberChange in magicNumber) or (numberChange in usedNumber):
                     # print(number);
                     max=Max(max, maxLenght)
                     break
                 usedNumber.append(numberChange)
-        print('Система счисления = ', base, end=' ')
-        print('Разряд = ', discharge, end=' ')
-        print('Максимальная длина = ', max, end=':')
+
+        print('Система счисления =', base, end=' ')
+        file.write('"%i",' % base)
+        print('Разряд =', discharge, end=' ')
+        file.write('"%i",' % discharge)
+        print('Максимальная длина =', max, end=': ')
+        file.write('"%i",' % max)
         for i in range(len(magicNumber)):
             magicNumberList=Conv(magicNumber[i], base)
             magicNumberString=''.join(map(str,magicNumberList))
             print(magicNumberString, end=' ')
+            file.write('%s; ' % (magicNumberString))
+        file.write('\n')
         print()
         magicNumber = [0]
         usedNumber = []
 
 
-nd(number)
