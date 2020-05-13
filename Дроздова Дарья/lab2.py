@@ -10,10 +10,12 @@ def SymmetryEvenNumb(seq, n):
     for i in range(N):
         if seq[N - 1::-1] == seq[N:]:
             str = seq[:N] + '|' + seq[N:]
-            axes.append(str)
-        if seq[N - 1::-1] == seq[N + 1:]:
+            if str not in axes:
+                axes.append(str)
+        if seq[N - 1:0:-1] == seq[N + 1:]:
             str = '(' + seq[0] + ')' + seq[1:N] + '(' + seq[N] + ')' + seq[N + 1:]
-            axes.append(str)
+            if str not in axes:
+                axes.append(str)
         seq = seq[-1] + seq[:-1]
     return axes
 
@@ -25,20 +27,19 @@ def SymmetryOddNumb(seq, n):
     for i in range(n):
         if seq[N - 1::-1] == seq[N + 1:]:
             str = seq[:N] + '(' + seq[N] + ')' + seq[N + 1:]
-            axes.append(str)
+            if str not in axes:
+                axes.append(str)
         seq = seq[-1] + seq[:-1]
     return axes
 
 
 # убрать элементы, которые получаются циклическим сдвигом
 def removeShift(seq, n):
-    k = 0
-    l = len(seq)
     seq1 = list()
     for num in seq:
         seq1.append(num)
-        for i in range(len(seq)):
-            num = num[i:] + num[:i]
+        for i in range(n-1):
+            num = num[-1] + num[:-1]
             if num in seq:
                 seq.remove(num)
     return seq1
@@ -123,7 +124,7 @@ def symmetry(seq, n):
 
 
 # запись результатов эксперимента в файл
-for n in range(6, 11):
+for n in range(6, 10):
     for k in range(3, n // 2 + 1 + 1):
         seq = sequence(n, k)
         f.write(str(n) + ' ' + str(k) + '\n')
@@ -145,4 +146,3 @@ n = 8
 R = 6
 axes = SymmetryEvenNumb(seq, n)
 drawPolygone(seq, n, R, 2, axes)
-
