@@ -1,0 +1,6 @@
+The shortest path from 5 to 1[5, 2, 1] the length is 3
+The shortest path from 5 to 2[5, 2] the length is 2
+The shortest path from 5 to 3[5, 7, 4, 3] the length is 5
+The shortest path from 5 to 4[5, 7, 4] the length is 4
+The shortest path from 5 to 6[5, 7, 6] the length is 5
+The shortest path from 5 to 7[5, 7] the length is 3
