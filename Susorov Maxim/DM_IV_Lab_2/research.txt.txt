@@ -2,175 +2,341 @@
                              AMOUNT OF ELEMENTS == 3                               
 --------------------------------------------------------------------------------------
 ___k___ = 0:	Number of equivalence classes = 1
+				(0)0|0
 				Number of vertex-edge symmetry axis = 1
 ___k___ = 1:	Number of equivalence classes = 1
+				(1)0|0
 				Number of vertex-edge symmetry axis = 1
 ___k___ = 2:	Number of equivalence classes = 1
+				(0)1|1
 				Number of vertex-edge symmetry axis = 1
 ___k___ = 3:	Number of equivalence classes = 1
+				(1)1|1
 				Number of vertex-edge symmetry axis = 1
 --------------------------------------------------------------------------------------
                              AMOUNT OF ELEMENTS == 4                               
 --------------------------------------------------------------------------------------
 ___k___ = 0:	Number of equivalence classes = 1
+				(0)0(0)0
+				|00|00
 				Number of vertex-vertex symmetry axes = 1
 				Number of edge-edge symetry axes = 1
 ___k___ = 1:	Number of equivalence classes = 1
+				(1)0(0)0
 				Number of vertex-vertex symmetry axes = 1
 				Number of edge-edge symetry axes = 0
 ___k___ = 2:	Number of equivalence classes = 2
+				|10|01
+				(1)0(1)0
 				Number of vertex-vertex symmetry axes = 1
 				Number of edge-edge symetry axes = 1
 ___k___ = 3:	Number of equivalence classes = 1
+				(1)1(0)1
 				Number of vertex-vertex symmetry axes = 1
 				Number of edge-edge symetry axes = 0
 ___k___ = 4:	Number of equivalence classes = 1
+				(1)1(1)1
+				|11|11
 				Number of vertex-vertex symmetry axes = 1
 				Number of edge-edge symetry axes = 1
 --------------------------------------------------------------------------------------
                              AMOUNT OF ELEMENTS == 5                               
 --------------------------------------------------------------------------------------
 ___k___ = 0:	Number of equivalence classes = 1
+				(0)00|00
 				Number of vertex-edge symmetry axis = 1
 ___k___ = 1:	Number of equivalence classes = 1
+				(1)00|00
 				Number of vertex-edge symmetry axis = 1
 ___k___ = 2:	Number of equivalence classes = 2
+				(0)01|10
+				(0)10|01
 				Number of vertex-edge symmetry axis = 2
 ___k___ = 3:	Number of equivalence classes = 2
+				(1)10|01
+				(1)01|10
 				Number of vertex-edge symmetry axis = 2
 ___k___ = 4:	Number of equivalence classes = 1
+				(0)11|11
 				Number of vertex-edge symmetry axis = 1
 ___k___ = 5:	Number of equivalence classes = 1
+				(1)11|11
 				Number of vertex-edge symmetry axis = 1
 --------------------------------------------------------------------------------------
                              AMOUNT OF ELEMENTS == 6                               
 --------------------------------------------------------------------------------------
 ___k___ = 0:	Number of equivalence classes = 1
+				(0)00(0)00
+				|000|000
 				Number of vertex-vertex symmetry axes = 1
 				Number of edge-edge symetry axes = 1
 ___k___ = 1:	Number of equivalence classes = 1
+				(1)00(0)00
 				Number of vertex-vertex symmetry axes = 1
 				Number of edge-edge symetry axes = 0
 ___k___ = 2:	Number of equivalence classes = 3
+				|100|001
+				(0)10(0)01
+				(1)00(1)00
+				|010|010
 				Number of vertex-vertex symmetry axes = 2
 				Number of edge-edge symetry axes = 2
 ___k___ = 3:	Number of equivalence classes = 4
+				(1)10(0)01
+				(1)01(0)10
 				Number of vertex-vertex symmetry axes = 2
 				Number of edge-edge symetry axes = 0
 ___k___ = 4:	Number of equivalence classes = 3
+				|110|011
+				(1)10(1)01
+				(0)11(0)11
+				|101|101
 				Number of vertex-vertex symmetry axes = 2
 				Number of edge-edge symetry axes = 2
 ___k___ = 5:	Number of equivalence classes = 1
+				(1)11(0)11
 				Number of vertex-vertex symmetry axes = 1
 				Number of edge-edge symetry axes = 0
 ___k___ = 6:	Number of equivalence classes = 1
+				(1)11(1)11
+				|111|111
 				Number of vertex-vertex symmetry axes = 1
 				Number of edge-edge symetry axes = 1
 --------------------------------------------------------------------------------------
                              AMOUNT OF ELEMENTS == 7                               
 --------------------------------------------------------------------------------------
 ___k___ = 0:	Number of equivalence classes = 1
+				(0)000|000
 				Number of vertex-edge symmetry axis = 1
 ___k___ = 1:	Number of equivalence classes = 1
+				(1)000|000
 				Number of vertex-edge symmetry axis = 1
 ___k___ = 2:	Number of equivalence classes = 3
+				(0)001|100
+				(0)100|001
+				(0)010|010
 				Number of vertex-edge symmetry axis = 3
 ___k___ = 3:	Number of equivalence classes = 5
+				(1)100|001
+				(1)001|100
+				(1)010|010
 				Number of vertex-edge symmetry axis = 3
 ___k___ = 4:	Number of equivalence classes = 5
+				(0)011|110
+				(0)110|011
+				(0)101|101
 				Number of vertex-edge symmetry axis = 3
 ___k___ = 5:	Number of equivalence classes = 3
+				(1)110|011
+				(1)011|110
+				(1)101|101
 				Number of vertex-edge symmetry axis = 3
 ___k___ = 6:	Number of equivalence classes = 1
+				(0)111|111
 				Number of vertex-edge symmetry axis = 1
 ___k___ = 7:	Number of equivalence classes = 1
+				(1)111|111
 				Number of vertex-edge symmetry axis = 1
 --------------------------------------------------------------------------------------
                              AMOUNT OF ELEMENTS == 8                               
 --------------------------------------------------------------------------------------
 ___k___ = 0:	Number of equivalence classes = 1
+				(0)000(0)000
+				|0000|0000
 				Number of vertex-vertex symmetry axes = 1
 				Number of edge-edge symetry axes = 1
 ___k___ = 1:	Number of equivalence classes = 1
+				(1)000(0)000
 				Number of vertex-vertex symmetry axes = 1
 				Number of edge-edge symetry axes = 0
 ___k___ = 2:	Number of equivalence classes = 4
+				|1000|0001
+				(0)100(0)001
+				|0100|0010
+				(1)000(1)000
 				Number of vertex-vertex symmetry axes = 2
 				Number of edge-edge symetry axes = 2
 ___k___ = 3:	Number of equivalence classes = 7
+				(1)100(0)001
+				(1)010(0)010
+				(0)100(1)001
 				Number of vertex-vertex symmetry axes = 3
 				Number of edge-edge symetry axes = 0
 ___k___ = 4:	Number of equivalence classes = 10
+				|1100|0011
+				(1)100(1)001
+				(0)110(0)011
+				|1010|0101
+				|1001|1001
+				(1)010(1)010
 				Number of vertex-vertex symmetry axes = 3
 				Number of edge-edge symetry axes = 3
 ___k___ = 5:	Number of equivalence classes = 7
+				(1)110(0)011
+				(1)101(0)101
+				(0)110(1)011
 				Number of vertex-vertex symmetry axes = 3
 				Number of edge-edge symetry axes = 0
 ___k___ = 6:	Number of equivalence classes = 4
+				|1110|0111
+				(1)110(1)011
+				|1101|1011
+				(1)101(1)101
 				Number of vertex-vertex symmetry axes = 2
 				Number of edge-edge symetry axes = 2
 ___k___ = 7:	Number of equivalence classes = 1
+				(1)111(0)111
 				Number of vertex-vertex symmetry axes = 1
 				Number of edge-edge symetry axes = 0
 ___k___ = 8:	Number of equivalence classes = 1
+				(1)111(1)111
+				|1111|1111
 				Number of vertex-vertex symmetry axes = 1
 				Number of edge-edge symetry axes = 1
 --------------------------------------------------------------------------------------
                              AMOUNT OF ELEMENTS == 9                               
 --------------------------------------------------------------------------------------
 ___k___ = 0:	Number of equivalence classes = 1
+				(0)0000|0000
 				Number of vertex-edge symmetry axis = 1
 ___k___ = 1:	Number of equivalence classes = 1
+				(1)0000|0000
 				Number of vertex-edge symmetry axis = 1
 ___k___ = 2:	Number of equivalence classes = 4
+				(0)0001|1000
+				(0)1000|0001
+				(0)0010|0100
+				(0)0100|0010
 				Number of vertex-edge symmetry axis = 4
 ___k___ = 3:	Number of equivalence classes = 10
+				(1)1000|0001
+				(1)0001|1000
+				(1)0100|0010
+				(1)0010|0100
 				Number of vertex-edge symmetry axis = 4
 ___k___ = 4:	Number of equivalence classes = 14
+				(0)0011|1100
+				(0)1100|0011
+				(0)0101|1010
+				(0)0110|0110
+				(0)1001|1001
+				(0)1010|0101
 				Number of vertex-edge symmetry axis = 6
 ___k___ = 5:	Number of equivalence classes = 14
+				(1)1100|0011
+				(1)0011|1100
+				(1)1010|0101
+				(1)1001|1001
+				(1)0110|0110
+				(1)0101|1010
 				Number of vertex-edge symmetry axis = 6
 ___k___ = 6:	Number of equivalence classes = 10
+				(0)0111|1110
+				(0)1011|1101
+				(0)1110|0111
+				(0)1101|1011
 				Number of vertex-edge symmetry axis = 4
 ___k___ = 7:	Number of equivalence classes = 4
+				(1)1110|0111
+				(1)0111|1110
+				(1)1101|1011
+				(1)1011|1101
 				Number of vertex-edge symmetry axis = 4
 ___k___ = 8:	Number of equivalence classes = 1
+				(0)1111|1111
 				Number of vertex-edge symmetry axis = 1
 ___k___ = 9:	Number of equivalence classes = 1
+				(1)1111|1111
 				Number of vertex-edge symmetry axis = 1
 --------------------------------------------------------------------------------------
                              AMOUNT OF ELEMENTS == 10                               
 --------------------------------------------------------------------------------------
 ___k___ = 0:	Number of equivalence classes = 1
+				(0)0000(0)0000
+				|00000|00000
 				Number of vertex-vertex symmetry axes = 1
 				Number of edge-edge symetry axes = 1
 ___k___ = 1:	Number of equivalence classes = 1
+				(1)0000(0)0000
 				Number of vertex-vertex symmetry axes = 1
 				Number of edge-edge symetry axes = 0
 ___k___ = 2:	Number of equivalence classes = 5
+				|10000|00001
+				(0)1000(0)0001
+				|01000|00010
+				(0)0100(0)0010
+				(1)0000(1)0000
+				|00100|00100
 				Number of vertex-vertex symmetry axes = 3
 				Number of edge-edge symetry axes = 3
 ___k___ = 3:	Number of equivalence classes = 12
+				(1)1000(0)0001
+				(1)0100(0)0010
+				(0)1000(1)0001
+				(1)0010(0)0100
 				Number of vertex-vertex symmetry axes = 4
 				Number of edge-edge symetry axes = 0
 ___k___ = 4:	Number of equivalence classes = 22
+				|11000|00011
+				(1)1000(1)0001
+				(0)1100(0)0011
+				|10100|00101
+				|01100|00110
+				|10010|01001
+				(0)0110(0)0110
+				|10001|10001
+				(0)1010(0)0101
+				(1)0100(1)0010
+				(0)1001(0)1001
+				|01010|01010
 				Number of vertex-vertex symmetry axes = 6
 				Number of edge-edge symetry axes = 6
 ___k___ = 5:	Number of equivalence classes = 26
+				(1)1100(0)0011
+				(1)1010(0)0101
+				(1)1001(0)1001
+				(0)1100(1)0011
+				(1)0110(0)0110
+				(1)0101(0)1010
 				Number of vertex-vertex symmetry axes = 6
 				Number of edge-edge symetry axes = 0
 ___k___ = 6:	Number of equivalence classes = 22
+				|11100|00111
+				(1)1100(1)0011
+				|11010|01011
+				|11001|10011
+				(0)1110(0)0111
+				(1)1010(1)0101
+				(1)1001(1)1001
+				|01110|01110
+				|10110|01101
+				(0)1101(0)1011
+				(1)0110(1)0110
+				|10101|10101
 				Number of vertex-vertex symmetry axes = 6
 				Number of edge-edge symetry axes = 6
 ___k___ = 7:	Number of equivalence classes = 12
+				(1)1110(0)0111
+				(1)1101(0)1011
+				(0)1110(1)0111
+				(1)1011(0)1101
 				Number of vertex-vertex symmetry axes = 4
 				Number of edge-edge symetry axes = 0
 ___k___ = 8:	Number of equivalence classes = 5
+				|11110|01111
+				(1)1110(1)0111
+				|11101|10111
+				(1)1101(1)1011
+				(0)1111(0)1111
+				|11011|11011
 				Number of vertex-vertex symmetry axes = 3
 				Number of edge-edge symetry axes = 3
 ___k___ = 9:	Number of equivalence classes = 1
+				(1)1111(0)1111
 				Number of vertex-vertex symmetry axes = 1
 				Number of edge-edge symetry axes = 0
 ___k___ = 10:	Number of equivalence classes = 1
+				(1)1111(1)1111
+				|11111|11111
 				Number of vertex-vertex symmetry axes = 1
 				Number of edge-edge symetry axes = 1

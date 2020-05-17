@@ -38,7 +38,7 @@ def VertexVertexSymmetry(sequence: list, n: int):
     Function checks symmetry of type, when symmetry axe starts in vertex and ends in vertex
     :param sequence: sequence to check
     :param n: length
-    :return: list(bool, list())
+    :return: list(bool, str)
     """
     symmetry_index = n // 2
     result = False
@@ -49,7 +49,14 @@ def VertexVertexSymmetry(sequence: list, n: int):
             if seq[i] != seq[-i]:
                 mid_result = False
         if mid_result:
-            return [mid_result, seq]
+            res_seq = str()
+            for i in range(n):
+                if i == 0 or i == symmetry_index:
+                    res_seq += ''.join('(')
+                res_seq += ''.join(seq[i])
+                if i == 0 or i == symmetry_index:
+                    res_seq += ''.join(')')
+            return [mid_result, res_seq]
         result = result or mid_result
     return [result, list()]
 
@@ -59,7 +66,7 @@ def VertexEdgeSymmetry(sequence: list, n: int):
     Function checks symmetry of type, when symmetry axe starts in vertex and ends in edge
     :param sequence: sequnce to check
     :param n: length
-    :return: list(bool, list())
+    :return: list(bool, str)
     """
     symmetry_index = n // 2
     result = False
@@ -70,7 +77,16 @@ def VertexEdgeSymmetry(sequence: list, n: int):
             if seq[i] != seq[-i]:
                 mid_result = False
         if mid_result:
-            return [mid_result, seq]
+            res_seq = str()
+            for i in range(n):
+                if i == 0:
+                    res_seq += ''.join('(')
+                if i == symmetry_index + 1:
+                    res_seq += ''.join('|')
+                res_seq += ''.join(seq[i])
+                if i == 0:
+                    res_seq += ''.join(')')
+            return [mid_result, res_seq]
         result = result or mid_result
     return [result, list()]
 
@@ -80,7 +96,7 @@ def EdgeEdgeSymmetry(sequence: list, n: int):
     Function checks symmetry of type, when symmetry axe starts in edge and ends in edge
     :param sequence: sequnce to check
     :param n: length
-    :return: list(bool, list())
+    :return: list(bool, str)
     """
     symmetry_index = n // 2
     result = False
@@ -91,7 +107,12 @@ def EdgeEdgeSymmetry(sequence: list, n: int):
             if seq[i] != seq[-i - 1]:
                 mid_result = False
         if mid_result:
-            return [mid_result, seq]
+            res_seq = str()
+            for i in range(n):
+                if i == 0 or i == symmetry_index:
+                    res_seq += ''.join('|')
+                res_seq += ''.join(seq[i])
+            return [mid_result, res_seq]
         result = result or mid_result
     return [result, list()]
 
@@ -116,8 +137,10 @@ def Research(maxN: int):
                 for seq in sequences:
                     if VertexVertexSymmetry(seq, n)[0]:
                         vertex_vertex += 1
+                        print("\t\t\t\t%s" % VertexVertexSymmetry(seq, n)[1])
                     if EdgeEdgeSymmetry(seq, n)[0]:
                         edge_edge += 1
+                        print("\t\t\t\t%s" % EdgeEdgeSymmetry(seq, n)[1])
                 print("\t\t\t\tNumber of vertex-vertex symmetry axes = %d" % vertex_vertex)
                 print("\t\t\t\tNumber of edge-edge symetry axes = %d" % edge_edge)
             else:
@@ -125,6 +148,7 @@ def Research(maxN: int):
                 for seq in sequences:
                     if VertexEdgeSymmetry(seq, n)[0]:
                         vertex_edge += 1
+                        print("\t\t\t\t%s" % VertexEdgeSymmetry(seq, n)[1])
                 print("\t\t\t\tNumber of vertex-edge symmetry axis = %d" % vertex_edge)
 
 
