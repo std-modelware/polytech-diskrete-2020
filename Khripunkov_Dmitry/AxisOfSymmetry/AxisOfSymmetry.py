@@ -85,6 +85,6 @@ def symmetry(n: int, k: int):
             count += 1
         print('Number of axis: ', axis_number)
 
-n = 8#n = int(input('Input number length: '))
-k = 3#k = int(input('Input amount of ones: '))
+n = int(input('Input number length: '))
+k = int(input('Input amount of ones: '))
 symmetry(n, k)
