@@ -28,6 +28,8 @@ def fix_graph(graph):
                             break
                 else:
                     v = random.randint(0, n - 1)
+                    while v == i:
+                        v = random.randint(0, n - 1)
                     graph[i].remove(v)
                     graph[v].remove(i)
                 i = -1
