@@ -1,0 +1,166 @@
+import itertools
+import matplotlib.pyplot as plot
+import math
+
+def Combinations(N, K):
+    nums = []
+    digits = [1] * K + [0] * (N - K)
+    for i in itertools.permutations(digits, N):
+        if i not in nums:
+            nums.append(i)
+    return nums
+
+def RemoveCycles(Nums):
+    for i in Nums:
+        test = []
+        for j in i:
+            test.append(j)
+        while True:
+            test.append(test.pop(0))
+            if tuple(test) == i:
+                break
+            if tuple(test) in Nums:
+                Nums.remove(tuple(test))
+    return Nums
+
+def Case1(Num):
+    sym = []
+    for i in range(0, len(Num) // 2):
+        flag = True
+        for j in range(1, len(Num) // 2):
+            t2 = i - j
+            if i + j >= len(Num):
+                t1 = abs(len(Num) - (i + j))
+            else:
+                t1 = i + j
+            if Num[t1] != Num[t2]:
+                flag = False
+                break
+        if flag:
+            sym.append([i, i + len(Num) // 2])
+    return sym
+
+
+def Case2(Num):
+    sym = []
+    for i in range(0, len(Num) // 2):
+        flag = True
+        for j in range(1, len(Num) // 2 + 1):
+            t2 = i - j + 1
+            if i + j >= len(Num):
+                t1 = abs(len(Num) - (i + j))
+            else:
+                t1 = i + j
+            if Num[t1] != Num[t2]:
+                flag = False
+                break
+        if flag:
+            sym.append([i, i + len(Num) // 2])
+    return sym
+
+def Case3(Num):
+    sym = []
+    for i in range(0, len(Num)):
+        flag = True
+        for j in range(1, len(Num) // 2 + 1):
+            t2 = i - j
+            if i + j >= len(Num):
+                t1 = abs(len(Num) - (i + j))
+            else:
+                t1 = i + j
+            if Num[t1] != Num[t2]:
+                flag = False
+                break
+        if flag:
+            sym.append([i, i + len(Num) // 2])
+    return sym
+
+def ToXY(n, i, Radius):
+    x = (Radius * math.cos(2 * math.pi * i / n))
+    y = (Radius * math.sin(2 * math.pi * i / n))
+    return x, y
+
+def Symmetry(Num, x, y, r):
+    c1 = []
+    c2 = []
+    c3 = []
+
+    # 1 - через 2 вершины
+    # 2 - через 2 стороны
+    # 3 - через вершину и сторону
+
+    if len(Num) % 2 == 0:
+        c1 = Case1(Num)
+        c2 = Case2(Num)
+    else:
+        c3 = Case3(Num)
+
+    for i in range(c1.__len__()):
+        x1, y1 = ToXY(len(Num), c1[i][0], r)
+        x2, y2 = ToXY(len(Num), c1[i][1], r)
+        plot.plot([x1, x2], [y1, y2])
+
+    for i in range(c2.__len__()):
+        xMid = []
+        yMid = []
+        for j in range(0, 2):
+            x1, y1 = ToXY(len(Num), c2[i][j], r)
+            x2, y2 = ToXY(len(Num), c2[i][j] + 1, r)
+            xMid.append((x1 + x2) / 2)
+            yMid.append((y1 + y2) / 2)
+        plot.plot(xMid, yMid)
+
+    for i in range(c3.__len__()):
+        x1, y1 = ToXY(len(Num), c3[i][1], r)
+        x2, y2 = ToXY(len(Num), c3[i][1] + 1, r)
+        xMid = (x1 + x2) / 2
+        yMid = (y1 + y2) / 2
+        plot.plot([x[c3[i][0]], xMid], [y[c3[i][0]], yMid])
+
+    return c1.__len__() + c2.__len__() + c3.__len__()
+
+def Output(Nums):
+    print("Equivalence classes: " + str(Nums.__len__()))
+
+    for i in Nums:
+
+        x = []
+        y = []
+        r = 3
+
+        for j in range(len(i) + 1):
+            xt, yt = ToXY(len(i), j, r)
+            x.append(xt)
+            y.append(yt)
+
+        plot.figure()
+        plot.plot(x, y)
+        for j in range(len(i)):
+            plot.text(x[j], y[j], str(i[j]))
+        title = str()
+        for j in i:
+            title += str(j)
+        plot.title(title)
+
+        count = Symmetry(i, x, y, r)
+
+        print(title + ':')
+        print("Axis of symmetry: " + str(count))
+
+    plot.show()
+
+def main():
+    while True:
+        print("Input sequence length N: ", end = '')
+        N = int(input())
+        print("Input count of ones: ", end = '')
+        K = int(input())
+        if N >= K:
+            break
+        print("Invalid data. Try again:")
+
+    nums = Combinations(N, K)
+    nums = RemoveCycles(nums)
+    Output(nums)
+
+main()
