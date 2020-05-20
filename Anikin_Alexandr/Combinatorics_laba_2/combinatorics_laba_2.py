@@ -62,7 +62,4 @@ for n in range(3, 10):
             EquivalenceClass = FindSymmetry(BitString)
             for Equivalence in EquivalenceClass:
                 print(Equivalence)
-# BitString = "0010100"
-# n = len(BitString)
-# print(BitString[:n//2])
-# print(BitString[-1: -n//2: -1])
+
