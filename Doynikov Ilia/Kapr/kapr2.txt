@@ -1,0 +1,201 @@
+Pos =  2
+  Len =  2
+  No Kapr :(
+  Len =  3
+  No Kapr :(
+  Len =  4
+    Kapr: 1001
+  Len =  5
+    Kapr: 10101
+  Len =  6
+    Kapr: 101101
+    Kapr: 110001
+  Len =  7
+    Kapr: 1011101
+    Kapr: 1101001
+  Len =  8
+    Kapr: 10111101
+    Kapr: 11011001
+    Kapr: 11100001
+  Len =  9
+    Kapr: 101111101
+    Kapr: 110111001
+    Kapr: 111010001
+  Len =  10
+    Kapr: 1011111101
+    Kapr: 1101111001
+    Kapr: 1110110001
+    Kapr: 1111000001
+Pos =  3
+  Len =  2
+  No Kapr :(
+  Len =  3
+  No Kapr :(
+  Len =  4
+  No Kapr :(
+  Len =  5
+    Kapr: 20211
+  Len =  6
+  No Kapr :(
+  Len =  7
+    Kapr: 2202101
+  Len =  8
+    Kapr: 21022111
+  Len =  9
+    Kapr: 222021001
+  Len =  10
+    Kapr: 2210221101
+Pos =  4
+  Len =  2
+  No Kapr :(
+  Len =  3
+    Kapr: 132
+  Len =  4
+    Kapr: 3021
+  Len =  5
+  No Kapr :(
+  Len =  6
+    Kapr: 213312
+    Kapr: 310221
+    Kapr: 330201
+  Len =  7
+    Kapr: 3203211
+  Len =  8
+    Kapr: 31102221
+    Kapr: 33102201
+    Kapr: 33302001
+  Len =  9
+    Kapr: 221333112
+    Kapr: 321032211
+    Kapr: 332032101
+  Len =  10
+    Kapr: 3111022221
+    Kapr: 3220332111
+    Kapr: 3311022201
+    Kapr: 3331022001
+    Kapr: 3333020001
+Pos =  5
+  Len =  2
+    Kapr: 13
+  Len =  3
+  No Kapr :(
+  Len =  4
+    Kapr: 3032
+  Len =  5
+  No Kapr :(
+  Len =  6
+  No Kapr :(
+  Len =  7
+  No Kapr :(
+  Len =  8
+  No Kapr :(
+  Len =  9
+    Kapr: 432043211
+  Len =  10
+  No Kapr :(
+Pos =  6
+  Len =  2
+  No Kapr :(
+  Len =  3
+    Kapr: 253
+  Len =  4
+  No Kapr :(
+  Len =  5
+    Kapr: 41532
+  Len =  6
+    Kapr: 325523
+    Kapr: 420432
+    Kapr: 530421
+  Len =  7
+  No Kapr :(
+  Len =  8
+    Kapr: 43155322
+    Kapr: 55304201
+  Len =  9
+    Kapr: 332555223
+  Len =  10
+    Kapr: 4321044322
+    Kapr: 4421553312
+    Kapr: 5331044221
+    Kapr: 5553042001
+Pos =  7
+  Len =  2
+  No Kapr :(
+  Len =  3
+  No Kapr :(
+  Len =  4
+  No Kapr :(
+  Len =  5
+  No Kapr :(
+  Len =  6
+  No Kapr :(
+  Len =  7
+  No Kapr :(
+  Len =  8
+  No Kapr :(
+  Len =  9
+  No Kapr :(
+  Len =  10
+  No Kapr :(
+Pos =  8
+  Len =  2
+    Kapr: 25
+  Len =  3
+    Kapr: 374
+  Len =  4
+  No Kapr :(
+  Len =  5
+  No Kapr :(
+  Len =  6
+    Kapr: 437734
+    Kapr: 640632
+  Len =  7
+    Kapr: 6417532
+  Len =  8
+    Kapr: 75306421
+  Len =  9
+    Kapr: 443777334
+  Len =  10
+    Kapr: 7753064201
+Pos =  9
+  Len =  2
+  No Kapr :(
+  Len =  3
+  No Kapr :(
+  Len =  4
+  No Kapr :(
+  Len =  5
+    Kapr: 62853
+  Len =  6
+  No Kapr :(
+  Len =  7
+  No Kapr :(
+  Len =  8
+    Kapr: 65288533
+  Len =  9
+    Kapr: 753186532
+  Len =  10
+    Kapr: 6632885523
+Pos =  10
+  Len =  2
+  No Kapr :(
+  Len =  3
+    Kapr: 495
+  Len =  4
+    Kapr: 6174
+  Len =  5
+  No Kapr :(
+  Len =  6
+    Kapr: 549945
+    Kapr: 631764
+  Len =  7
+  No Kapr :(
+  Len =  8
+    Kapr: 63317664
+    Kapr: 97508421
+  Len =  9
+    Kapr: 554999445
+  Len =  10
+    Kapr: 6333176664
+    Kapr: 9753086421
+    Kapr: 9975084201
