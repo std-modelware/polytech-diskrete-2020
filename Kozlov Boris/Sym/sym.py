@@ -172,7 +172,7 @@ if len >= 3 and num_of_ones > 0:
         quantity, num1, num2 = count_axis_in_sequence(sequence)
         if quantity > 0:
             draw_polygon(sequence, num1, num2)
-            plot.savefig(fname=path + "\\AxisOf" + str(quantity) + ".png", dpi=100)
+            plot.savefig(fname=path + "\\AxisOf" + str(sequence) + ".png", dpi=100)
             plot.close()
         print(str(bin(sequence)) + " is a unique sequence,")
         print("It has " + str(quantity) + " axis of symmetry overall.\n")
