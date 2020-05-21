@@ -2,15 +2,17 @@ import matplotlib.pyplot as plt
 import numpy as np
 import networkx as nx
 
-def CreateGraph(vertNumber, edgeNumber):
+def ReadGraph(fileName):
+    file = open(fileName)
+    line = file.readline()
+    vertNumber = int(line)
     graph = [[] for i in range(vertNumber)]
 
-    for i in range(edgeNumber):
-        firstVert = np.random.randint(0, vertNumber)
-        secondVert = np.random.randint(0, vertNumber)
+    for line in file:
+        verts = list(map(int, line.split()))
 
-        graph[firstVert].append(secondVert)
-        graph[secondVert].append(firstVert)
+        graph[verts[0]].append(verts[1])
+        graph[verts[1]].append(verts[0])
     return graph
 
 def DFS(vert, graph, vertComp, currComp):
@@ -29,16 +31,12 @@ def CreateNxGraph(graph):
             nxGraph.add_edge(i, j);
     return nxGraph
 
-print("Input vertex number:")
-vertNumber = int(input())
-print("Input edges number:")
-edgeNumber = int(input())
 
 vertComp = {}
-graph = CreateGraph(vertNumber, edgeNumber)
+graph = ReadGraph("Test3.txt")
 currComp = 0
 
-for vert in range(vertNumber):
+for vert in range(len(graph)):
     if vert not in vertComp:
         DFS(vert, graph, vertComp, currComp)
         currComp += 1
