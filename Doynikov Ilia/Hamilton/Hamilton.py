@@ -12,7 +12,7 @@ A =  [[0,1,1,1,1,1,1,1], # 1
 def hamilton(curr): #checking hamilton cycle from curr 
     Path.append(curr)
     if len(Path) == n:
-        if A[Path[0]][Path[-1]] == 1:
+        if A[Path[-1]][Path[0]] == 1:
             print(Path) # Print path
             return True 
         else: 
