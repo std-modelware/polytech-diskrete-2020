@@ -63,6 +63,7 @@ def Check2Vert(curr, l):
     return 0 
 
 def Symm(l, word, fig):
+    flag = 0
     if l % 2 == 1: #ODD
         for j in range(0, l):
             tmp = fig.pop()
@@ -72,9 +73,18 @@ def Symm(l, word, fig):
             fig.append(tmp)
             #print(fig, "3")
             fig.reverse()
-            print(fig, "^^")
+            #print(fig, "^^")
+            tmp1 = word.pop()
+            #print(fig, "1")
+            word.reverse()
+            #print(fig, "2")
+            word.append(tmp1)
+            #print(fig, "3")
+            word.reverse()
+            #print(fig, "^^")
             if CheckVertSide(fig):
-                print('Symm is vert & side; side(mid)', word[int((l-1) / 2)], word[int((l-1) / 2) + 1 ],'vert:', word[0])
+                flag = 1
+                print('      Symm is vert & side; side(mid)', word[int((l-1) / 2)], word[int((l-1) / 2) + 1 ],'vert:', word[0])
             
     else:          #EVEN
         for j in range(0, int(l/2)):
@@ -94,16 +104,20 @@ def Symm(l, word, fig):
             word.reverse()
             #print(fig, "^^")
             if Check2Side(fig):
-                print('Symm is 2 side; 1 side(mid)', word[l-1], word[0],'2 side(mid)', word[int(l/2)-1], word[int(l/2)])
+                flag = 1
+                print('      Symm is 2 side; 1 side(mid)', word[l-1], word[0],'2 side(mid)', word[int(l/2)-1], word[int(l/2)])
             if Check2Vert(fig, l):
-                print('Symm is 2 vert: ', word[0], word[int(l/2)])
+                flag = 1
+                print('      Symm is 2 vert: ', word[0], word[int(l/2)])
             #print(fig, "(9)")
+    if flag == 0:
+        print('      No symmerty')
 
 
 
 #Symm(4, [0, 1, 0, 1])
 print('UPPERCASE is 1 vertices lowercase -- 0')
-for i in range (3, 5):
+for i in range (3, 10):
     print('Length == ', i)
     for j in range (1, i):
         print(' №of 1 == ', j)
@@ -118,6 +132,7 @@ for i in range (3, 5):
                         str1.append(string.ascii_lowercase[m])
                     else:
                         str1.append(string.ascii_uppercase[m])
+            print('    Figure is :', k)
             print('    Figure is :', str1)
             Symm(i, str1, k)
                 
