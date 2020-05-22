@@ -14,7 +14,7 @@
 #Output:
 #2
 from collections import deque
-fp = open("C:/Users/Данил/PycharmProjects/untitled/venv/test.txt", "r")
+fp = open("input.txt", "r")
 
 def Read2Number(fp):
     n = fp.read(1)
