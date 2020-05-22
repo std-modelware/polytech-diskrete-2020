@@ -1,0 +1,99 @@
+import math
+import heapq 
+
+def Input():
+    FileName = "input.txt"
+    file = open(FileName, 'r')
+    matrix = []
+    temp = []
+    i = 0
+    n = 1
+    while i < n:
+        str = file.readline().strip().split()
+        n = len(str)
+        for j in range(n):
+            temp.append(int(str[j]))
+        matrix.append(temp.copy())
+        str.clear()
+        temp.clear()
+        i += 1
+    vertex  = []
+    for i in range(n):
+        vertex.append(i + 1)
+    return vertex, matrix
+
+def GetDist(Matrix, v, u):
+    return Matrix[v - 1][u - 1]
+
+def GetAdjacent(Matrix, v):
+    result = []
+    for i in range(len(Matrix)):
+        if Matrix[v - 1][i] != 0:
+            result.append(i + 1)
+    return result
+
+def VertexSearch(Q, u):
+    result = -1
+    for i in range(len(Q)):
+        if u == Q[i][1]:
+            result = i
+            break
+    return result
+
+def Prim(Vertex, Matrix):
+    d = []
+    p = []
+    Q = []
+    T = []
+
+    for i in range(len(Vertex) + 1):
+        d.append(math.inf)
+        p.append(0)
+    d[1] = 0
+
+    for i in range(1, len(Vertex) + 1):
+        heapq.heappush(Q, [d[i], i])
+
+    v = heapq.heappop(Q)
+
+    while len(Q) != 0:
+        adj = GetAdjacent(Matrix, v[1])
+        for i in range(len(adj)):
+            j = VertexSearch(Q, adj[i])
+            dt = GetDist(Matrix, v[1], adj[i])
+            if j != -1 and dt < d[adj[i]]:
+                d[adj[i]] = dt
+                Q[j][0] = d[adj[i]]
+                p[adj[i]] = v[1]
+        v = heapq.heappop(Q)
+        T.append([p[v[1]], v[1]])
+
+    return T
+
+def Output(T, Matrix):
+    FileName = "result.txt"
+    weight = 0
+    file = open(FileName, 'w')
+    mtrx = [[0] * len(Matrix) for i in range(len(Matrix))]
+    for i in range(len(T)):
+        mtrx[T[i][0] - 1][T[i][1] - 1] = Matrix[T[i][0] - 1][T[i][1] - 1]
+        mtrx[T[i][1] - 1][T[i][0] - 1] = Matrix[T[i][1] - 1][T[i][0] - 1]
+        weight += Matrix[T[i][0] - 1][T[i][1] - 1]
+    for i in range(len(mtrx)):
+        for j in range(len(mtrx)):
+            file.write(str(mtrx[i][j]) + ' ')
+        file.write('\n')
+    file.close()
+    print("Done!")
+    for i in range(len(T) - 1):
+        print(str(T[i][0]) + " -> " + str(T[i][1]), end = ", ")
+    print(str(T[len(T) - 1][0]) + " -> " + str(T[len(T) - 1][1]) + ".")
+    print("Tree weight is " + str(weight) + ".")
+    print("Check 'result.txt' for matrix.")
+
+def main():
+    vertex, matrix = Input()
+    t = Prim(vertex, matrix)
+    Output(t, matrix)
+
+main()
