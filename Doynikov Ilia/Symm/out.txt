@@ -1,0 +1,579 @@
+UPPERCASE is 1 vertices lowercase -- 0
+Length ==  3
+ №of 1 ==  1
+    Figure is : [0, 0, 1]
+    Figure is : ['a', 'b', 'C']
+      Symm is vert & side; side(mid) a b vert: C
+ №of 1 ==  2
+    Figure is : [0, 1, 1]
+    Figure is : ['a', 'B', 'C']
+      Symm is vert & side; side(mid) B C vert: a
+Length ==  4
+ №of 1 ==  1
+    Figure is : [0, 0, 0, 1]
+    Figure is : ['a', 'b', 'c', 'D']
+      Symm is 2 vert:  D b
+ №of 1 ==  2
+    Figure is : [0, 1, 0, 1]
+    Figure is : ['a', 'B', 'c', 'D']
+      Symm is 2 vert:  D B
+      Symm is 2 vert:  c a
+    Figure is : [0, 0, 1, 1]
+    Figure is : ['a', 'b', 'C', 'D']
+      Symm is 2 side; 1 side(mid) C D 2 side(mid) a b
+ №of 1 ==  3
+    Figure is : [0, 1, 1, 1]
+    Figure is : ['a', 'B', 'C', 'D']
+      Symm is 2 vert:  C a
+Length ==  5
+ №of 1 ==  1
+    Figure is : [0, 0, 0, 0, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'E']
+      Symm is vert & side; side(mid) b c vert: E
+ №of 1 ==  2
+    Figure is : [0, 0, 1, 0, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'E']
+      Symm is vert & side; side(mid) a b vert: d
+    Figure is : [0, 0, 0, 1, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'E']
+      Symm is vert & side; side(mid) D E vert: b
+ №of 1 ==  3
+    Figure is : [0, 1, 0, 1, 1]
+    Figure is : ['a', 'B', 'c', 'D', 'E']
+      Symm is vert & side; side(mid) D E vert: B
+    Figure is : [0, 0, 1, 1, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'E']
+      Symm is vert & side; side(mid) a b vert: D
+ №of 1 ==  4
+    Figure is : [0, 1, 1, 1, 1]
+    Figure is : ['a', 'B', 'C', 'D', 'E']
+      Symm is vert & side; side(mid) C D vert: a
+Length ==  6
+ №of 1 ==  1
+    Figure is : [0, 0, 0, 0, 0, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'e', 'F']
+      Symm is 2 vert:  F c
+ №of 1 ==  2
+    Figure is : [0, 0, 1, 0, 0, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'e', 'F']
+      Symm is 2 vert:  F C
+      Symm is 2 side; 1 side(mid) d e 2 side(mid) a b
+    Figure is : [0, 0, 0, 1, 0, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'e', 'F']
+      Symm is 2 vert:  e b
+    Figure is : [0, 0, 0, 0, 1, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'E', 'F']
+      Symm is 2 side; 1 side(mid) E F 2 side(mid) b c
+ №of 1 ==  3
+    Figure is : [0, 1, 0, 1, 0, 1]
+    Figure is : ['a', 'B', 'c', 'D', 'e', 'F']
+      Symm is 2 vert:  F c
+      Symm is 2 vert:  e B
+      Symm is 2 vert:  D a
+    Figure is : [0, 0, 1, 1, 0, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'e', 'F']
+      No symmerty
+    Figure is : [0, 0, 1, 0, 1, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'E', 'F']
+      No symmerty
+    Figure is : [0, 0, 0, 1, 1, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'E', 'F']
+      Symm is 2 vert:  E b
+ №of 1 ==  4
+    Figure is : [0, 1, 1, 0, 1, 1]
+    Figure is : ['a', 'B', 'C', 'd', 'E', 'F']
+      Symm is 2 side; 1 side(mid) E F 2 side(mid) B C
+      Symm is 2 vert:  d a
+    Figure is : [0, 1, 0, 1, 1, 1]
+    Figure is : ['a', 'B', 'c', 'D', 'E', 'F']
+      Symm is 2 vert:  E B
+    Figure is : [0, 0, 1, 1, 1, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'E', 'F']
+      Symm is 2 side; 1 side(mid) D E 2 side(mid) a b
+ №of 1 ==  5
+    Figure is : [0, 1, 1, 1, 1, 1]
+    Figure is : ['a', 'B', 'C', 'D', 'E', 'F']
+      Symm is 2 vert:  D a
+Length ==  7
+ №of 1 ==  1
+    Figure is : [0, 0, 0, 0, 0, 0, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'e', 'f', 'G']
+      Symm is vert & side; side(mid) c d vert: G
+ №of 1 ==  2
+    Figure is : [0, 0, 0, 1, 0, 0, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'e', 'f', 'G']
+      Symm is vert & side; side(mid) e f vert: b
+    Figure is : [0, 0, 0, 0, 1, 0, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'E', 'f', 'G']
+      Symm is vert & side; side(mid) b c vert: f
+    Figure is : [0, 0, 0, 0, 0, 1, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'e', 'F', 'G']
+      Symm is vert & side; side(mid) F G vert: c
+ №of 1 ==  3
+    Figure is : [0, 0, 1, 0, 1, 0, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'E', 'f', 'G']
+      Symm is vert & side; side(mid) a b vert: E
+    Figure is : [0, 0, 1, 0, 0, 1, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'e', 'F', 'G']
+      Symm is vert & side; side(mid) F G vert: C
+    Figure is : [0, 0, 0, 1, 1, 0, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'E', 'f', 'G']
+      No symmerty
+    Figure is : [0, 0, 0, 1, 0, 1, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'e', 'F', 'G']
+      No symmerty
+    Figure is : [0, 0, 0, 0, 1, 1, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'E', 'F', 'G']
+      Symm is vert & side; side(mid) b c vert: F
+ №of 1 ==  4
+    Figure is : [0, 1, 0, 1, 0, 1, 1]
+    Figure is : ['a', 'B', 'c', 'D', 'e', 'F', 'G']
+      Symm is vert & side; side(mid) F G vert: c
+    Figure is : [0, 0, 1, 1, 1, 0, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'E', 'f', 'G']
+      No symmerty
+    Figure is : [0, 0, 1, 1, 0, 1, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'e', 'F', 'G']
+      Symm is vert & side; side(mid) a b vert: e
+    Figure is : [0, 0, 1, 0, 1, 1, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'E', 'F', 'G']
+      No symmerty
+    Figure is : [0, 0, 0, 1, 1, 1, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'E', 'F', 'G']
+      Symm is vert & side; side(mid) E F vert: b
+ №of 1 ==  5
+    Figure is : [0, 1, 1, 0, 1, 1, 1]
+    Figure is : ['a', 'B', 'C', 'd', 'E', 'F', 'G']
+      Symm is vert & side; side(mid) B C vert: F
+    Figure is : [0, 1, 0, 1, 1, 1, 1]
+    Figure is : ['a', 'B', 'c', 'D', 'E', 'F', 'G']
+      Symm is vert & side; side(mid) E F vert: B
+    Figure is : [0, 0, 1, 1, 1, 1, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'E', 'F', 'G']
+      Symm is vert & side; side(mid) a b vert: E
+ №of 1 ==  6
+    Figure is : [0, 1, 1, 1, 1, 1, 1]
+    Figure is : ['a', 'B', 'C', 'D', 'E', 'F', 'G']
+      Symm is vert & side; side(mid) D E vert: a
+Length ==  8
+ №of 1 ==  1
+    Figure is : [0, 0, 0, 0, 0, 0, 0, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'H']
+      Symm is 2 vert:  H d
+ №of 1 ==  2
+    Figure is : [0, 0, 0, 1, 0, 0, 0, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'e', 'f', 'g', 'H']
+      Symm is 2 vert:  H D
+      Symm is 2 vert:  f b
+    Figure is : [0, 0, 0, 0, 1, 0, 0, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'E', 'f', 'g', 'H']
+      Symm is 2 side; 1 side(mid) f g 2 side(mid) b c
+    Figure is : [0, 0, 0, 0, 0, 1, 0, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'e', 'F', 'g', 'H']
+      Symm is 2 vert:  g c
+    Figure is : [0, 0, 0, 0, 0, 0, 1, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'e', 'f', 'G', 'H']
+      Symm is 2 side; 1 side(mid) G H 2 side(mid) c d
+ №of 1 ==  3
+    Figure is : [0, 0, 1, 0, 0, 1, 0, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'e', 'F', 'g', 'H']
+      Symm is 2 vert:  g C
+    Figure is : [0, 0, 0, 1, 1, 0, 0, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'E', 'f', 'g', 'H']
+      No symmerty
+    Figure is : [0, 0, 0, 1, 0, 1, 0, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'e', 'F', 'g', 'H']
+      Symm is 2 vert:  F b
+    Figure is : [0, 0, 0, 1, 0, 0, 1, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'e', 'f', 'G', 'H']
+      No symmerty
+    Figure is : [0, 0, 0, 0, 1, 1, 0, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'E', 'F', 'g', 'H']
+      No symmerty
+    Figure is : [0, 0, 0, 0, 1, 0, 1, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'E', 'f', 'G', 'H']
+      No symmerty
+    Figure is : [0, 0, 0, 0, 0, 1, 1, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'e', 'F', 'G', 'H']
+      Symm is 2 vert:  G c
+ №of 1 ==  4
+    Figure is : [0, 1, 0, 1, 0, 1, 0, 1]
+    Figure is : ['a', 'B', 'c', 'D', 'e', 'F', 'g', 'H']
+      Symm is 2 vert:  H D
+      Symm is 2 vert:  g c
+      Symm is 2 vert:  F B
+      Symm is 2 vert:  e a
+    Figure is : [0, 0, 1, 1, 0, 1, 0, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'e', 'F', 'g', 'H']
+      No symmerty
+    Figure is : [0, 0, 1, 1, 0, 0, 1, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'e', 'f', 'G', 'H']
+      Symm is 2 side; 1 side(mid) G H 2 side(mid) C D
+      Symm is 2 side; 1 side(mid) e f 2 side(mid) a b
+    Figure is : [0, 0, 1, 0, 1, 1, 0, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'E', 'F', 'g', 'H']
+      Symm is 2 side; 1 side(mid) E F 2 side(mid) a b
+    Figure is : [0, 0, 1, 0, 1, 0, 1, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'E', 'f', 'G', 'H']
+      No symmerty
+    Figure is : [0, 0, 1, 0, 0, 1, 1, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'e', 'F', 'G', 'H']
+      Symm is 2 vert:  G C
+    Figure is : [0, 0, 0, 1, 1, 1, 0, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'E', 'F', 'g', 'H']
+      No symmerty
+    Figure is : [0, 0, 0, 1, 1, 0, 1, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'E', 'f', 'G', 'H']
+      Symm is 2 vert:  f b
+    Figure is : [0, 0, 0, 1, 0, 1, 1, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'e', 'F', 'G', 'H']
+      No symmerty
+    Figure is : [0, 0, 0, 0, 1, 1, 1, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'E', 'F', 'G', 'H']
+      Symm is 2 side; 1 side(mid) F G 2 side(mid) b c
+ №of 1 ==  5
+    Figure is : [0, 1, 0, 1, 1, 0, 1, 1]
+    Figure is : ['a', 'B', 'c', 'D', 'E', 'f', 'G', 'H']
+      Symm is 2 vert:  f B
+    Figure is : [0, 1, 0, 1, 0, 1, 1, 1]
+    Figure is : ['a', 'B', 'c', 'D', 'e', 'F', 'G', 'H']
+      Symm is 2 vert:  G c
+    Figure is : [0, 0, 1, 1, 1, 1, 0, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'E', 'F', 'g', 'H']
+      No symmerty
+    Figure is : [0, 0, 1, 1, 1, 0, 1, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'E', 'f', 'G', 'H']
+      No symmerty
+    Figure is : [0, 0, 1, 1, 0, 1, 1, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'e', 'F', 'G', 'H']
+      No symmerty
+    Figure is : [0, 0, 1, 0, 1, 1, 1, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'E', 'F', 'G', 'H']
+      No symmerty
+    Figure is : [0, 0, 0, 1, 1, 1, 1, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'E', 'F', 'G', 'H']
+      Symm is 2 vert:  F b
+ №of 1 ==  6
+    Figure is : [0, 1, 1, 1, 0, 1, 1, 1]
+    Figure is : ['a', 'B', 'C', 'D', 'e', 'F', 'G', 'H']
+      Symm is 2 vert:  G C
+      Symm is 2 vert:  e a
+    Figure is : [0, 1, 1, 0, 1, 1, 1, 1]
+    Figure is : ['a', 'B', 'C', 'd', 'E', 'F', 'G', 'H']
+      Symm is 2 side; 1 side(mid) F G 2 side(mid) B C
+    Figure is : [0, 1, 0, 1, 1, 1, 1, 1]
+    Figure is : ['a', 'B', 'c', 'D', 'E', 'F', 'G', 'H']
+      Symm is 2 vert:  F B
+    Figure is : [0, 0, 1, 1, 1, 1, 1, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'E', 'F', 'G', 'H']
+      Symm is 2 side; 1 side(mid) E F 2 side(mid) a b
+ №of 1 ==  7
+    Figure is : [0, 1, 1, 1, 1, 1, 1, 1]
+    Figure is : ['a', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+      Symm is 2 vert:  E a
+Length ==  8
+ №of 1 ==  1
+    Figure is : [0, 0, 0, 0, 0, 0, 0, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'H']
+      Symm is 2 vert:  H d
+ №of 1 ==  2
+    Figure is : [0, 0, 0, 1, 0, 0, 0, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'e', 'f', 'g', 'H']
+      Symm is 2 vert:  H D
+      Symm is 2 vert:  f b
+    Figure is : [0, 0, 0, 0, 1, 0, 0, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'E', 'f', 'g', 'H']
+      Symm is 2 side; 1 side(mid) f g 2 side(mid) b c
+    Figure is : [0, 0, 0, 0, 0, 1, 0, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'e', 'F', 'g', 'H']
+      Symm is 2 vert:  g c
+    Figure is : [0, 0, 0, 0, 0, 0, 1, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'e', 'f', 'G', 'H']
+      Symm is 2 side; 1 side(mid) G H 2 side(mid) c d
+ №of 1 ==  3
+    Figure is : [0, 0, 1, 0, 0, 1, 0, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'e', 'F', 'g', 'H']
+      Symm is 2 vert:  g C
+    Figure is : [0, 0, 0, 1, 1, 0, 0, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'E', 'f', 'g', 'H']
+      No symmerty
+    Figure is : [0, 0, 0, 1, 0, 1, 0, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'e', 'F', 'g', 'H']
+      Symm is 2 vert:  F b
+    Figure is : [0, 0, 0, 1, 0, 0, 1, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'e', 'f', 'G', 'H']
+      No symmerty
+    Figure is : [0, 0, 0, 0, 1, 1, 0, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'E', 'F', 'g', 'H']
+      No symmerty
+    Figure is : [0, 0, 0, 0, 1, 0, 1, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'E', 'f', 'G', 'H']
+      No symmerty
+    Figure is : [0, 0, 0, 0, 0, 1, 1, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'e', 'F', 'G', 'H']
+      Symm is 2 vert:  G c
+ №of 1 ==  4
+    Figure is : [0, 1, 0, 1, 0, 1, 0, 1]
+    Figure is : ['a', 'B', 'c', 'D', 'e', 'F', 'g', 'H']
+      Symm is 2 vert:  H D
+      Symm is 2 vert:  g c
+      Symm is 2 vert:  F B
+      Symm is 2 vert:  e a
+    Figure is : [0, 0, 1, 1, 0, 1, 0, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'e', 'F', 'g', 'H']
+      No symmerty
+    Figure is : [0, 0, 1, 1, 0, 0, 1, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'e', 'f', 'G', 'H']
+      Symm is 2 side; 1 side(mid) G H 2 side(mid) C D
+      Symm is 2 side; 1 side(mid) e f 2 side(mid) a b
+    Figure is : [0, 0, 1, 0, 1, 1, 0, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'E', 'F', 'g', 'H']
+      Symm is 2 side; 1 side(mid) E F 2 side(mid) a b
+    Figure is : [0, 0, 1, 0, 1, 0, 1, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'E', 'f', 'G', 'H']
+      No symmerty
+    Figure is : [0, 0, 1, 0, 0, 1, 1, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'e', 'F', 'G', 'H']
+      Symm is 2 vert:  G C
+    Figure is : [0, 0, 0, 1, 1, 1, 0, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'E', 'F', 'g', 'H']
+      No symmerty
+    Figure is : [0, 0, 0, 1, 1, 0, 1, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'E', 'f', 'G', 'H']
+      Symm is 2 vert:  f b
+    Figure is : [0, 0, 0, 1, 0, 1, 1, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'e', 'F', 'G', 'H']
+      No symmerty
+    Figure is : [0, 0, 0, 0, 1, 1, 1, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'E', 'F', 'G', 'H']
+      Symm is 2 side; 1 side(mid) F G 2 side(mid) b c
+ №of 1 ==  5
+    Figure is : [0, 1, 0, 1, 1, 0, 1, 1]
+    Figure is : ['a', 'B', 'c', 'D', 'E', 'f', 'G', 'H']
+      Symm is 2 vert:  f B
+    Figure is : [0, 1, 0, 1, 0, 1, 1, 1]
+    Figure is : ['a', 'B', 'c', 'D', 'e', 'F', 'G', 'H']
+      Symm is 2 vert:  G c
+    Figure is : [0, 0, 1, 1, 1, 1, 0, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'E', 'F', 'g', 'H']
+      No symmerty
+    Figure is : [0, 0, 1, 1, 1, 0, 1, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'E', 'f', 'G', 'H']
+      No symmerty
+    Figure is : [0, 0, 1, 1, 0, 1, 1, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'e', 'F', 'G', 'H']
+      No symmerty
+    Figure is : [0, 0, 1, 0, 1, 1, 1, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'E', 'F', 'G', 'H']
+      No symmerty
+    Figure is : [0, 0, 0, 1, 1, 1, 1, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'E', 'F', 'G', 'H']
+      Symm is 2 vert:  F b
+ №of 1 ==  6
+    Figure is : [0, 1, 1, 1, 0, 1, 1, 1]
+    Figure is : ['a', 'B', 'C', 'D', 'e', 'F', 'G', 'H']
+      Symm is 2 vert:  G C
+      Symm is 2 vert:  e a
+    Figure is : [0, 1, 1, 0, 1, 1, 1, 1]
+    Figure is : ['a', 'B', 'C', 'd', 'E', 'F', 'G', 'H']
+      Symm is 2 side; 1 side(mid) F G 2 side(mid) B C
+    Figure is : [0, 1, 0, 1, 1, 1, 1, 1]
+    Figure is : ['a', 'B', 'c', 'D', 'E', 'F', 'G', 'H']
+      Symm is 2 vert:  F B
+    Figure is : [0, 0, 1, 1, 1, 1, 1, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'E', 'F', 'G', 'H']
+      Symm is 2 side; 1 side(mid) E F 2 side(mid) a b
+ №of 1 ==  7
+    Figure is : [0, 1, 1, 1, 1, 1, 1, 1]
+    Figure is : ['a', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+      Symm is 2 vert:  E a
+Length ==  9
+ №of 1 ==  1
+    Figure is : [0, 0, 0, 0, 0, 0, 0, 0, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'I']
+      Symm is vert & side; side(mid) d e vert: I
+ №of 1 ==  2
+    Figure is : [0, 0, 0, 0, 1, 0, 0, 0, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'E', 'f', 'g', 'h', 'I']
+      Symm is vert & side; side(mid) b c vert: g
+    Figure is : [0, 0, 0, 0, 0, 1, 0, 0, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'e', 'F', 'g', 'h', 'I']
+      Symm is vert & side; side(mid) g h vert: c
+    Figure is : [0, 0, 0, 0, 0, 0, 1, 0, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'e', 'f', 'G', 'h', 'I']
+      Symm is vert & side; side(mid) c d vert: h
+    Figure is : [0, 0, 0, 0, 0, 0, 0, 1, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'H', 'I']
+      Symm is vert & side; side(mid) H I vert: d
+ №of 1 ==  3
+    Figure is : [0, 0, 1, 0, 0, 1, 0, 0, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'e', 'F', 'g', 'h', 'I']
+      Symm is vert & side; side(mid) d e vert: I
+      Symm is vert & side; side(mid) a b vert: F
+      Symm is vert & side; side(mid) g h vert: C
+    Figure is : [0, 0, 0, 1, 0, 1, 0, 0, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'e', 'F', 'g', 'h', 'I']
+      No symmerty
+    Figure is : [0, 0, 0, 1, 0, 0, 1, 0, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'e', 'f', 'G', 'h', 'I']
+      No symmerty
+    Figure is : [0, 0, 0, 1, 0, 0, 0, 1, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'e', 'f', 'g', 'H', 'I']
+      Symm is vert & side; side(mid) H I vert: D
+    Figure is : [0, 0, 0, 0, 1, 1, 0, 0, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'E', 'F', 'g', 'h', 'I']
+      No symmerty
+    Figure is : [0, 0, 0, 0, 1, 0, 1, 0, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'E', 'f', 'G', 'h', 'I']
+      Symm is vert & side; side(mid) b c vert: G
+    Figure is : [0, 0, 0, 0, 1, 0, 0, 1, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'E', 'f', 'g', 'H', 'I']
+      No symmerty
+    Figure is : [0, 0, 0, 0, 0, 1, 1, 0, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'e', 'F', 'G', 'h', 'I']
+      No symmerty
+    Figure is : [0, 0, 0, 0, 0, 1, 0, 1, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'e', 'F', 'g', 'H', 'I']
+      No symmerty
+    Figure is : [0, 0, 0, 0, 0, 0, 1, 1, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'e', 'f', 'G', 'H', 'I']
+      Symm is vert & side; side(mid) c d vert: H
+ №of 1 ==  4
+    Figure is : [0, 0, 1, 0, 1, 0, 1, 0, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'E', 'f', 'G', 'h', 'I']
+      Symm is vert & side; side(mid) a b vert: f
+    Figure is : [0, 0, 1, 0, 1, 0, 0, 1, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'E', 'f', 'g', 'H', 'I']
+      Symm is vert & side; side(mid) H I vert: d
+    Figure is : [0, 0, 1, 0, 0, 1, 1, 0, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'e', 'F', 'G', 'h', 'I']
+      No symmerty
+    Figure is : [0, 0, 1, 0, 0, 1, 0, 1, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'e', 'F', 'g', 'H', 'I']
+      No symmerty
+    Figure is : [0, 0, 0, 1, 1, 1, 0, 0, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'E', 'F', 'g', 'h', 'I']
+      No symmerty
+    Figure is : [0, 0, 0, 1, 1, 0, 1, 0, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'E', 'f', 'G', 'h', 'I']
+      No symmerty
+    Figure is : [0, 0, 0, 1, 1, 0, 0, 1, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'E', 'f', 'g', 'H', 'I']
+      Symm is vert & side; side(mid) f g vert: b
+    Figure is : [0, 0, 0, 1, 0, 1, 1, 0, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'e', 'F', 'G', 'h', 'I']
+      Symm is vert & side; side(mid) F G vert: b
+    Figure is : [0, 0, 0, 1, 0, 1, 0, 1, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'e', 'F', 'g', 'H', 'I']
+      No symmerty
+    Figure is : [0, 0, 0, 1, 0, 0, 1, 1, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'e', 'f', 'G', 'H', 'I']
+      No symmerty
+    Figure is : [0, 0, 0, 0, 1, 1, 1, 0, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'E', 'F', 'G', 'h', 'I']
+      No symmerty
+    Figure is : [0, 0, 0, 0, 1, 1, 0, 1, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'E', 'F', 'g', 'H', 'I']
+      Symm is vert & side; side(mid) b c vert: g
+    Figure is : [0, 0, 0, 0, 1, 0, 1, 1, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'E', 'f', 'G', 'H', 'I']
+      No symmerty
+    Figure is : [0, 0, 0, 0, 0, 1, 1, 1, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'e', 'F', 'G', 'H', 'I']
+      Symm is vert & side; side(mid) G H vert: c
+ №of 1 ==  5
+    Figure is : [0, 1, 0, 1, 0, 1, 0, 1, 1]
+    Figure is : ['a', 'B', 'c', 'D', 'e', 'F', 'g', 'H', 'I']
+      Symm is vert & side; side(mid) H I vert: D
+    Figure is : [0, 0, 1, 1, 1, 0, 1, 0, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'E', 'f', 'G', 'h', 'I']
+      No symmerty
+    Figure is : [0, 0, 1, 1, 0, 1, 1, 0, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'e', 'F', 'G', 'h', 'I']
+      No symmerty
+    Figure is : [0, 0, 1, 1, 0, 1, 0, 1, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'e', 'F', 'g', 'H', 'I']
+      Symm is vert & side; side(mid) a b vert: F
+    Figure is : [0, 0, 1, 1, 0, 0, 1, 1, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'e', 'f', 'G', 'H', 'I']
+      Symm is vert & side; side(mid) C D vert: H
+    Figure is : [0, 0, 1, 0, 1, 1, 1, 0, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'E', 'F', 'G', 'h', 'I']
+      Symm is vert & side; side(mid) a b vert: F
+    Figure is : [0, 0, 1, 0, 1, 1, 0, 1, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'E', 'F', 'g', 'H', 'I']
+      No symmerty
+    Figure is : [0, 0, 1, 0, 1, 0, 1, 1, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'E', 'f', 'G', 'H', 'I']
+      No symmerty
+    Figure is : [0, 0, 1, 0, 0, 1, 1, 1, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'e', 'F', 'G', 'H', 'I']
+      Symm is vert & side; side(mid) G H vert: C
+    Figure is : [0, 0, 0, 1, 1, 1, 1, 0, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'E', 'F', 'G', 'h', 'I']
+      No symmerty
+    Figure is : [0, 0, 0, 1, 1, 1, 0, 1, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'E', 'F', 'g', 'H', 'I']
+      No symmerty
+    Figure is : [0, 0, 0, 1, 1, 0, 1, 1, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'E', 'f', 'G', 'H', 'I']
+      No symmerty
+    Figure is : [0, 0, 0, 1, 0, 1, 1, 1, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'e', 'F', 'G', 'H', 'I']
+      No symmerty
+    Figure is : [0, 0, 0, 0, 1, 1, 1, 1, 1]
+    Figure is : ['a', 'b', 'c', 'd', 'E', 'F', 'G', 'H', 'I']
+      Symm is vert & side; side(mid) b c vert: G
+ №of 1 ==  6
+    Figure is : [0, 1, 1, 0, 1, 1, 0, 1, 1]
+    Figure is : ['a', 'B', 'C', 'd', 'E', 'F', 'g', 'H', 'I']
+      Symm is vert & side; side(mid) B C vert: g
+      Symm is vert & side; side(mid) H I vert: d
+      Symm is vert & side; side(mid) E F vert: a
+    Figure is : [0, 1, 0, 1, 1, 1, 0, 1, 1]
+    Figure is : ['a', 'B', 'c', 'D', 'E', 'F', 'g', 'H', 'I']
+      No symmerty
+    Figure is : [0, 1, 0, 1, 1, 0, 1, 1, 1]
+    Figure is : ['a', 'B', 'c', 'D', 'E', 'f', 'G', 'H', 'I']
+      No symmerty
+    Figure is : [0, 1, 0, 1, 0, 1, 1, 1, 1]
+    Figure is : ['a', 'B', 'c', 'D', 'e', 'F', 'G', 'H', 'I']
+      Symm is vert & side; side(mid) G H vert: c
+    Figure is : [0, 0, 1, 1, 1, 1, 1, 0, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'E', 'F', 'G', 'h', 'I']
+      No symmerty
+    Figure is : [0, 0, 1, 1, 1, 1, 0, 1, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'E', 'F', 'g', 'H', 'I']
+      No symmerty
+    Figure is : [0, 0, 1, 1, 1, 0, 1, 1, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'E', 'f', 'G', 'H', 'I']
+      Symm is vert & side; side(mid) a b vert: f
+    Figure is : [0, 0, 1, 1, 0, 1, 1, 1, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'e', 'F', 'G', 'H', 'I']
+      No symmerty
+    Figure is : [0, 0, 1, 0, 1, 1, 1, 1, 1]
+    Figure is : ['a', 'b', 'C', 'd', 'E', 'F', 'G', 'H', 'I']
+      No symmerty
+    Figure is : [0, 0, 0, 1, 1, 1, 1, 1, 1]
+    Figure is : ['a', 'b', 'c', 'D', 'E', 'F', 'G', 'H', 'I']
+      Symm is vert & side; side(mid) F G vert: b
+ №of 1 ==  7
+    Figure is : [0, 1, 1, 1, 0, 1, 1, 1, 1]
+    Figure is : ['a', 'B', 'C', 'D', 'e', 'F', 'G', 'H', 'I']
+      Symm is vert & side; side(mid) G H vert: C
+    Figure is : [0, 1, 1, 0, 1, 1, 1, 1, 1]
+    Figure is : ['a', 'B', 'C', 'd', 'E', 'F', 'G', 'H', 'I']
+      Symm is vert & side; side(mid) B C vert: G
+    Figure is : [0, 1, 0, 1, 1, 1, 1, 1, 1]
+    Figure is : ['a', 'B', 'c', 'D', 'E', 'F', 'G', 'H', 'I']
+      Symm is vert & side; side(mid) F G vert: B
+    Figure is : [0, 0, 1, 1, 1, 1, 1, 1, 1]
+    Figure is : ['a', 'b', 'C', 'D', 'E', 'F', 'G', 'H', 'I']
+      Symm is vert & side; side(mid) a b vert: F
+ №of 1 ==  8
+    Figure is : [0, 1, 1, 1, 1, 1, 1, 1, 1]
+    Figure is : ['a', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']
+      Symm is vert & side; side(mid) E F vert: a
+
+
+
