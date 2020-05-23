@@ -1,0 +1,83 @@
+def Input():
+    filename = "input.txt"
+    file = open(filename, 'r')
+    matrix = []
+    temp = []
+    i = 0
+    n = 1
+    while i < n:
+        str = file.readline().strip().split()
+        n = len(str)
+        for j in range(n):
+            temp.append(int(str[j]))
+        matrix.append(temp.copy())
+        str.clear()
+        temp.clear()
+        i += 1
+    return n, matrix
+
+def Output(result):
+    filename = "output.txt"
+    file = open(filename, 'w')
+    for i in range(len(result)-1):
+        file.write(str(result[i])+ " -> ")
+    file.write(str(result[len(result)-1]))
+    file.close()
+
+def Сonnectivity(graph, vertex, number):    #проверка графа на связность с помощью алгоритма обхода в ширину
+    used = [False for i in range(number)]
+    dst = [-1 for i in range(number)]
+    q = [vertex]
+    used[vertex] = True
+    dst[vertex] = 0
+    while q != []:
+        v = q[0]
+        q.remove(q[0])
+        for i in range(number):
+            if graph[v][i] == 1 and used[i] == 0:
+                q.append(i)
+                used[i] = True
+                dst[i] = dst[v]+1
+    return dst
+
+def Fleury(graph, degree, vertex):  #алгоритм Флери для поиска эйлерова цикла в эйлеровом графе
+    s = [vertex]
+    res = []
+    while s != []:
+        v = s[0]
+        if degree[v] == 0: 
+            res.append(v)
+            s.remove(v)
+        else:
+            for i in range(len(degree)):
+                if graph[v][i]:
+                    graph[v][i] = 0
+                    graph[i][v] = 0
+                    degree[v] = degree[v]-1
+                    degree[i] = degree[i]-1
+                    s.insert(0,i)
+                    break
+    return res
+
+
+
+def main():
+    result = dst = []
+    n, graph = Input()
+    if graph == [[]]: 
+        print('Граф пустой')
+        return 
+    deg = [0 for i in range(n)]
+    for i in range(n):
+        for j in range(n):
+           deg[i] += graph[i][j];
+    dst = Сonnectivity(graph, 0, n)
+    for i in range(n):
+        if dst[i] == -1 or deg[i]%2 == 1: 
+            print('Граф не подходит по одному из условий(не связан или не эйлеров)')  
+            return
+    result = Fleury(graph, deg, 0)
+    Output(result)
+main()
+
+
