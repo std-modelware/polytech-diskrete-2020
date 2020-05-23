@@ -11,7 +11,7 @@ def CheckCourse(course, graph, visited):
         return 1
     if (visited[course] == 1): # вершина окрашена в серый цвет
         return 0
-    visited[course] = 1 # не заходили в вершину до этого, меняем ее цвет с белого на черный
+    visited[course] = 1 # не заходили в вершину до этого, меняем ее цвет с белого на серый
     for prevCourse in graph[course]:
         flag = CheckCourse(prevCourse, graph, visited)
         if (flag == False):
