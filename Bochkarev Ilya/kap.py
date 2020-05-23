@@ -2,14 +2,14 @@ class Kaprekar(object):
 
     def to_number(self, array):
         number = 0
-        for i in range(self.discharge):
+        for i in range(self.radix):
             number += array[i] * (self.degree ** i)
         return number
 
     def column_subtraction(self, array1, array2):
         flag = False
         answer = []
-        for i in range(self.discharge):
+        for i in range(self.radix):
             if flag:
                 answer.append(array1[i] - array2[i] - 1)
             else:
@@ -47,17 +47,17 @@ class Kaprekar(object):
             reverse = copy.copy()
             reverse.reverse()
 
-    def __init__(self, discharge, degree):
-        self.discharge = discharge
+    def __init__(self, radix, degree):
+        self.radix = radix
         self.degree = degree
         self.digit = []
         all_const = []
-        for i in range(discharge):
+        for i in range(radix):
             self.digit.append(0)
         all_const.append(self.find_const_for_num())
-        for i in range(degree ** discharge - 1):
+        for i in range(degree ** radix - 1):
             self.digit[0] += 1
-            for j in range(discharge):
+            for j in range(radix):
                 if self.digit[j] == degree:
                     self.digit[j] = 0
                     self.digit[j + 1] += 1
@@ -69,7 +69,7 @@ class Kaprekar(object):
                 flag = True
                 for t in range(len(all_const[j])):
                     flag = True
-                    for y in range(discharge):
+                    for y in range(radix):
                         if all_const[j][t][y] != temp[0][y]:
                             flag = False
                     if flag:
@@ -78,13 +78,13 @@ class Kaprekar(object):
                     break
             if not flag:
                 all_const.append(temp)
-        f.write("System base - " + str(degree) + " Number of digits - " + str(discharge) + "\n")
+        f.write("System base - " + str(degree) + " Number of digits - " + str(radix) + "\n")
         for i in range(len(all_const)):
             f.write(str(all_const[i]) + "\n")
 
 
-f = open('text.txt', 'w')
-for k in range(2, 11):
-    for p in range(2, 7):
+f = open('answer.txt', 'w')
+for k in range(2, 4):
+    for p in range(2, 4):
         m = Kaprekar(p, k)
 f.close()
